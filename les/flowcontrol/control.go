@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/common/mclock"
+	"github.com/projectgela/gela/common/mclock"
 )
 
 const fcTimeConst = time.Millisecond

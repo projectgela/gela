@@ -16,9 +16,9 @@
 package validator
 
 import (
-	"github.com/tomochain/tomochain/accounts/abi/bind"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/contracts/validator/contract"
+	"github.com/projectgela/gela/accounts/abi/bind"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/contracts/validator/contract"
 	"math/big"
 )
 

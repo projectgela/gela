@@ -26,11 +26,11 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/math"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/crypto/ecies"
-	"github.com/tomochain/tomochain/rlp"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/math"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/crypto/ecies"
+	"github.com/projectgela/gela/rlp"
 )
 
 // Envelope represents a clear-text data packet to transmit through the Whisper

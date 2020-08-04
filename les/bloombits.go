@@ -19,8 +19,8 @@ package les
 import (
 	"time"
 
-	"github.com/tomochain/tomochain/common/bitutil"
-	"github.com/tomochain/tomochain/light"
+	"github.com/projectgela/gela/common/bitutil"
+	"github.com/projectgela/gela/light"
 )
 
 const (

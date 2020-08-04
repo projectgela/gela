@@ -23,10 +23,10 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/tomochain/tomochain/core/state"
-	"github.com/tomochain/tomochain/core/vm"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/tests"
+	"github.com/projectgela/gela/core/state"
+	"github.com/projectgela/gela/core/vm"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/tests"
 
 	cli "gopkg.in/urfave/cli.v1"
 )

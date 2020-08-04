@@ -19,20 +19,20 @@ package core
 import (
 	"errors"
 	"fmt"
-	"github.com/tomochain/tomochain/consensus"
+	"github.com/projectgela/gela/consensus"
 	"math"
 	"math/big"
 	"sort"
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/state"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/event"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/metrics"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/state"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/event"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/metrics"
+	"github.com/projectgela/gela/params"
 	"gopkg.in/karalabe/cookiejar.v2/collections/prque"
 )
 

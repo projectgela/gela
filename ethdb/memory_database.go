@@ -20,7 +20,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/tomochain/tomochain/common"
+	"github.com/projectgela/gela/common"
 )
 
 /*

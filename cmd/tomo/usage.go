@@ -22,8 +22,8 @@ import (
 	"io"
 	"sort"
 
-	"github.com/tomochain/tomochain/cmd/utils"
-	"github.com/tomochain/tomochain/internal/debug"
+	"github.com/projectgela/gela/cmd/utils"
+	"github.com/projectgela/gela/internal/debug"
 	"gopkg.in/urfave/cli.v1"
 )
 

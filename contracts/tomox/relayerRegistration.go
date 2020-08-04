@@ -3,9 +3,9 @@ package tomox
 import (
 	"math/big"
 
-	"github.com/tomochain/tomochain/accounts/abi/bind"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/contracts/tomox/contract"
+	"github.com/projectgela/gela/accounts/abi/bind"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/contracts/tomox/contract"
 )
 
 type RelayerRegistration struct {

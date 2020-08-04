@@ -27,8 +27,8 @@ import (
 	"testing/quick"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/crypto"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/crypto"
 )
 
 type nullTransport struct{}

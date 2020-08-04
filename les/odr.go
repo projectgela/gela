@@ -19,10 +19,10 @@ package les
 import (
 	"context"
 
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/light"
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/light"
+	"github.com/projectgela/gela/log"
 )
 
 // LesOdr implements light.OdrBackend

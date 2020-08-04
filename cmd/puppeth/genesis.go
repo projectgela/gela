@@ -21,11 +21,11 @@ import (
 	"errors"
 	"math"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/hexutil"
-	"github.com/tomochain/tomochain/consensus/ethash"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/hexutil"
+	"github.com/projectgela/gela/consensus/ethash"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/params"
 )
 
 // cppEthereumGenesisSpec represents the genesis specification format used by the

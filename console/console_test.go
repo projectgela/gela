@@ -19,20 +19,20 @@ package console
 import (
 	"bytes"
 	"errors"
-	"github.com/tomochain/tomochain/tomox"
-	"github.com/tomochain/tomochain/tomoxlending"
+	"github.com/projectgela/gela/gelx"
+	"github.com/projectgela/gela/gelxlending"
 	"io/ioutil"
 	"os"
 	"strings"
 	"testing"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/consensus/ethash"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/eth"
-	"github.com/tomochain/tomochain/internal/jsre"
-	"github.com/tomochain/tomochain/node"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/consensus/ethash"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/eth"
+	"github.com/projectgela/gela/internal/jsre"
+	"github.com/projectgela/gela/node"
 )
 
 const (

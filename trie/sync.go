@@ -20,8 +20,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/ethdb"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/ethdb"
 	"gopkg.in/karalabe/cookiejar.v2/collections/prque"
 )
 

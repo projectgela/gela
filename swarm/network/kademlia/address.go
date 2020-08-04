@@ -21,7 +21,7 @@ import (
 	"math/rand"
 	"strings"
 
-	"github.com/tomochain/tomochain/common"
+	"github.com/projectgela/gela/common"
 )
 
 type Address common.Hash

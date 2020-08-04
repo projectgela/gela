@@ -25,16 +25,16 @@ import (
 	"testing"
 	"time"
 
-	ethereum "github.com/tomochain/tomochain"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/consensus/ethash"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/core/bloombits"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/event"
-	"github.com/tomochain/tomochain/params"
-	"github.com/tomochain/tomochain/rpc"
+	ethereum "github.com/projectgela/gela"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/consensus/ethash"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/core/bloombits"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/event"
+	"github.com/projectgela/gela/params"
+	"github.com/projectgela/gela/rpc"
 )
 
 type testBackend struct {

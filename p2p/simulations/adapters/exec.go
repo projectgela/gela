@@ -36,11 +36,11 @@ import (
 	"time"
 
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/node"
-	"github.com/tomochain/tomochain/p2p"
-	"github.com/tomochain/tomochain/p2p/discover"
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/node"
+	"github.com/projectgela/gela/p2p"
+	"github.com/projectgela/gela/p2p/discover"
+	"github.com/projectgela/gela/rpc"
 	"golang.org/x/net/websocket"
 )
 

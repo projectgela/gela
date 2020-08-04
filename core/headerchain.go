@@ -26,12 +26,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/consensus"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/consensus"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/params"
 	"github.com/hashicorp/golang-lru"
 )
 

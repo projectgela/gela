@@ -25,15 +25,15 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/hexutil"
-	"github.com/tomochain/tomochain/common/math"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/core/vm"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/rlp"
-	"github.com/tomochain/tomochain/tests"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/hexutil"
+	"github.com/projectgela/gela/common/math"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/core/vm"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/rlp"
+	"github.com/projectgela/gela/tests"
 )
 
 // To generate a new callTracer test, copy paste the makeTest method below into

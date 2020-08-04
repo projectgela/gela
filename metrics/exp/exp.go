@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/tomochain/tomochain/metrics"
+	"github.com/projectgela/gela/metrics"
 )
 
 type exp struct {

@@ -26,7 +26,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tomochain/tomochain/common"
+	"github.com/projectgela/gela/common"
 	"golang.org/x/tools/imports"
 )
 

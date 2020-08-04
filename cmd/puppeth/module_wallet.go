@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/log"
 )
 
 // walletDockerfile is the Dockerfile required to run a web wallet.

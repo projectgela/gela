@@ -25,11 +25,11 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/hexutil"
-	"github.com/tomochain/tomochain/core/vm"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/hexutil"
+	"github.com/projectgela/gela/core/vm"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/log"
 	duktape "gopkg.in/olebedev/go-duktape.v3"
 )
 

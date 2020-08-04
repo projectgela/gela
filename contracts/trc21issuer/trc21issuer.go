@@ -1,9 +1,9 @@
 package trc21issuer
 
 import (
-	"github.com/tomochain/tomochain/accounts/abi/bind"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/contracts/trc21issuer/contract"
+	"github.com/projectgela/gela/accounts/abi/bind"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/contracts/trc21issuer/contract"
 	"math/big"
 )
 

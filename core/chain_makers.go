@@ -20,14 +20,14 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/consensus"
-	"github.com/tomochain/tomochain/consensus/misc"
-	"github.com/tomochain/tomochain/core/state"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/core/vm"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/consensus"
+	"github.com/projectgela/gela/consensus/misc"
+	"github.com/projectgela/gela/core/state"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/core/vm"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/params"
 )
 
 // So we can deterministically seed different blockchains

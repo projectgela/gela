@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/params"
 )
 
 const (

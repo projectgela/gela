@@ -25,17 +25,17 @@ import (
 	"os"
 	"strings"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/hexutil"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/core/state"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/miner"
-	"github.com/tomochain/tomochain/params"
-	"github.com/tomochain/tomochain/rlp"
-	"github.com/tomochain/tomochain/rpc"
-	"github.com/tomochain/tomochain/trie"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/hexutil"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/core/state"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/miner"
+	"github.com/projectgela/gela/params"
+	"github.com/projectgela/gela/rlp"
+	"github.com/projectgela/gela/rpc"
+	"github.com/projectgela/gela/trie"
 )
 
 // PublicEthereumAPI provides an API to access Ethereum full node-related

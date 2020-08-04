@@ -22,7 +22,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/tomochain/tomochain/common"
+	"github.com/projectgela/gela/common"
 )
 
 // A BigInt represents a signed multi-precision integer.

@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/tomochain/tomochain/node"
-	"github.com/tomochain/tomochain/p2p"
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/node"
+	"github.com/projectgela/gela/p2p"
+	"github.com/projectgela/gela/rpc"
 )
 
 // SampleService is a trivial network service that can be attached to a node for

@@ -6,9 +6,9 @@ import (
 	"encoding/json"
 	"math/big"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/hexutil"
-	"github.com/tomochain/tomochain/common/math"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/hexutil"
+	"github.com/projectgela/gela/common/math"
 )
 
 var _ = (*structLogMarshaling)(nil)

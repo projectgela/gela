@@ -19,8 +19,8 @@ package runtime_test
 import (
 	"fmt"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/vm/runtime"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/vm/runtime"
 )
 
 func ExampleExecute() {

@@ -25,13 +25,13 @@ import (
 	"time"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/math"
-	"github.com/tomochain/tomochain/consensus"
-	"github.com/tomochain/tomochain/consensus/misc"
-	"github.com/tomochain/tomochain/core/state"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/math"
+	"github.com/projectgela/gela/consensus"
+	"github.com/projectgela/gela/consensus/misc"
+	"github.com/projectgela/gela/core/state"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/params"
 )
 
 // Ethash proof-of-work protocol constants.

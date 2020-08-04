@@ -25,12 +25,12 @@ import (
 	"sync"
 	"time"
 
-	ethereum "github.com/tomochain/tomochain"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/event"
-	"github.com/tomochain/tomochain/rpc"
+	ethereum "github.com/projectgela/gela"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/event"
+	"github.com/projectgela/gela/rpc"
 )
 
 // Type determines the kind of filter and is used to put the filter in to

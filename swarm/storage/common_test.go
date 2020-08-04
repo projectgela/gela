@@ -24,7 +24,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/log"
 )
 
 type brokenLimitedReader struct {

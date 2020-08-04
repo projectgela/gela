@@ -21,35 +21,35 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/tomochain/tomochain/tomoxlending/lendingstate"
+	"github.com/projectgela/gela/gelxlending/lendingstate"
 	"math/big"
 	"sort"
 	"strings"
 	"time"
 
-	"github.com/tomochain/tomochain/tomox/tradingstate"
+	"github.com/projectgela/gela/gelx/tradingstate"
 
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/util"
-	"github.com/tomochain/tomochain/accounts"
-	"github.com/tomochain/tomochain/accounts/abi/bind"
-	"github.com/tomochain/tomochain/accounts/keystore"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/hexutil"
-	"github.com/tomochain/tomochain/common/math"
-	"github.com/tomochain/tomochain/consensus/ethash"
-	"github.com/tomochain/tomochain/consensus/posv"
-	contractValidator "github.com/tomochain/tomochain/contracts/validator/contract"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/core/state"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/core/vm"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/p2p"
-	"github.com/tomochain/tomochain/params"
-	"github.com/tomochain/tomochain/rlp"
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/accounts"
+	"github.com/projectgela/gela/accounts/abi/bind"
+	"github.com/projectgela/gela/accounts/keystore"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/hexutil"
+	"github.com/projectgela/gela/common/math"
+	"github.com/projectgela/gela/consensus/ethash"
+	"github.com/projectgela/gela/consensus/posv"
+	contractValidator "github.com/projectgela/gela/contracts/validator/contract"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/core/state"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/core/vm"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/p2p"
+	"github.com/projectgela/gela/params"
+	"github.com/projectgela/gela/rlp"
+	"github.com/projectgela/gela/rpc"
 )
 
 const (
@@ -440,7 +440,7 @@ func signHash(data []byte) []byte {
 //
 // The key used to calculate the signature is decrypted with the given password.
 //
-// https://github.com/tomochain/tomochain/wiki/Management-APIs#personal_sign
+// https://github.com/projectgela/gela/wiki/Management-APIs#personal_sign
 func (s *PrivateAccountAPI) Sign(ctx context.Context, data hexutil.Bytes, addr common.Address, passwd string) (hexutil.Bytes, error) {
 	// Look up the wallet containing the requested signer
 	account := accounts.Account{Address: addr}
@@ -467,7 +467,7 @@ func (s *PrivateAccountAPI) Sign(ctx context.Context, data hexutil.Bytes, addr c
 // Note, the signature must conform to the secp256k1 curve R, S and V values, where
 // the V value must be be 27 or 28 for legacy reasons.
 //
-// https://github.com/tomochain/tomochain/wiki/Management-APIs#personal_ecRecover
+// https://github.com/projectgela/gela/wiki/Management-APIs#personal_ecRecover
 func (s *PrivateAccountAPI) EcRecover(ctx context.Context, data, sig hexutil.Bytes) (common.Address, error) {
 	if len(sig) != 65 {
 		return common.Address{}, fmt.Errorf("signature must be 65 bytes long")

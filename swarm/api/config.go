@@ -22,14 +22,14 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/contracts/ens"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/node"
-	"github.com/tomochain/tomochain/swarm/network"
-	"github.com/tomochain/tomochain/swarm/services/swap"
-	"github.com/tomochain/tomochain/swarm/storage"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/contracts/ens"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/node"
+	"github.com/projectgela/gela/swarm/network"
+	"github.com/projectgela/gela/swarm/services/swap"
+	"github.com/projectgela/gela/swarm/storage"
 )
 
 const (

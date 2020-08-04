@@ -22,11 +22,11 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/internal/ethapi"
-	"github.com/tomochain/tomochain/params"
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/internal/ethapi"
+	"github.com/projectgela/gela/params"
+	"github.com/projectgela/gela/rpc"
 )
 
 var maxPrice = big.NewInt(500 * params.Shannon)

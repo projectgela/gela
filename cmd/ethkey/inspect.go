@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/tomochain/tomochain/accounts/keystore"
-	"github.com/tomochain/tomochain/cmd/utils"
-	"github.com/tomochain/tomochain/crypto"
+	"github.com/projectgela/gela/accounts/keystore"
+	"github.com/projectgela/gela/cmd/utils"
+	"github.com/projectgela/gela/crypto"
 	"gopkg.in/urfave/cli.v1"
 )
 

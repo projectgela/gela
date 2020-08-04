@@ -21,12 +21,12 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/consensus/ethash"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/consensus/ethash"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/params"
 )
 
 // So we can deterministically seed different blockchains

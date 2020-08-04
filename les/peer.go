@@ -26,13 +26,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/eth"
-	"github.com/tomochain/tomochain/les/flowcontrol"
-	"github.com/tomochain/tomochain/light"
-	"github.com/tomochain/tomochain/p2p"
-	"github.com/tomochain/tomochain/rlp"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/eth"
+	"github.com/projectgela/gela/les/flowcontrol"
+	"github.com/projectgela/gela/light"
+	"github.com/projectgela/gela/p2p"
+	"github.com/projectgela/gela/rlp"
 )
 
 var (

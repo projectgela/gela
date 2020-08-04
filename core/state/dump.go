@@ -20,9 +20,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/rlp"
-	"github.com/tomochain/tomochain/trie"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/rlp"
+	"github.com/projectgela/gela/trie"
 )
 
 type DumpAccount struct {

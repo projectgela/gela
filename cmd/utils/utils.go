@@ -1,14 +1,14 @@
 package utils
 
 import (
-	"github.com/tomochain/tomochain/eth"
-	"github.com/tomochain/tomochain/eth/downloader"
-	"github.com/tomochain/tomochain/ethstats"
-	"github.com/tomochain/tomochain/les"
-	"github.com/tomochain/tomochain/node"
-	"github.com/tomochain/tomochain/tomox"
-	"github.com/tomochain/tomochain/tomoxlending"
-	whisper "github.com/tomochain/tomochain/whisper/whisperv6"
+	"github.com/projectgela/gela/eth"
+	"github.com/projectgela/gela/eth/downloader"
+	"github.com/projectgela/gela/ethstats"
+	"github.com/projectgela/gela/les"
+	"github.com/projectgela/gela/node"
+	"github.com/projectgela/gela/gelx"
+	"github.com/projectgela/gela/gelxlending"
+	whisper "github.com/projectgela/gela/whisper/whisperv6"
 )
 
 // RegisterEthService adds an Ethereum client to the stack.

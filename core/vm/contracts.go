@@ -21,11 +21,11 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/math"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/crypto/bn256"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/math"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/crypto/bn256"
+	"github.com/projectgela/gela/params"
 	"golang.org/x/crypto/ripemd160"
 )
 

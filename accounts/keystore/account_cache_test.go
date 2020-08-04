@@ -29,8 +29,8 @@ import (
 
 	"github.com/cespare/cp"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/tomochain/tomochain/accounts"
-	"github.com/tomochain/tomochain/common"
+	"github.com/projectgela/gela/accounts"
+	"github.com/projectgela/gela/common"
 )
 
 var (

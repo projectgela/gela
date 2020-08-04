@@ -20,13 +20,13 @@ import (
 	"context"
 	"math/big"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/core/bloombits"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/event"
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/core/bloombits"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/event"
+	"github.com/projectgela/gela/rpc"
 )
 
 type Backend interface {

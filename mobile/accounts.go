@@ -23,10 +23,10 @@ import (
 	"errors"
 	"time"
 
-	"github.com/tomochain/tomochain/accounts"
-	"github.com/tomochain/tomochain/accounts/keystore"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/crypto"
+	"github.com/projectgela/gela/accounts"
+	"github.com/projectgela/gela/accounts/keystore"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/crypto"
 )
 
 const (

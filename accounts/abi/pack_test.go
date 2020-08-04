@@ -24,7 +24,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tomochain/tomochain/common"
+	"github.com/projectgela/gela/common"
 )
 
 func TestPack(t *testing.T) {

@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/rpc"
 )
 
 // In this example, our client whishes to track the latest 'block number'

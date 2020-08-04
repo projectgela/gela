@@ -24,8 +24,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/swarm/storage"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/swarm/storage"
 )
 
 var testDownloadDir, _ = ioutil.TempDir(os.TempDir(), "bzz-test")

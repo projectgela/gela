@@ -17,8 +17,8 @@
 package eth
 
 import (
-	"github.com/tomochain/tomochain/metrics"
-	"github.com/tomochain/tomochain/p2p"
+	"github.com/projectgela/gela/metrics"
+	"github.com/projectgela/gela/p2p"
 )
 
 var (

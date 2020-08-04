@@ -20,7 +20,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/tomochain/tomochain/common"
+	"github.com/projectgela/gela/common"
 )
 
 const (

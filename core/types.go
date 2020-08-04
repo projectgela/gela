@@ -17,12 +17,12 @@
 package core
 
 import (
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/state"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/core/vm"
-	"github.com/tomochain/tomochain/tomox/tradingstate"
-	"github.com/tomochain/tomochain/tomoxlending/lendingstate"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/state"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/core/vm"
+	"github.com/projectgela/gela/gelx/tradingstate"
+	"github.com/projectgela/gela/gelxlending/lendingstate"
 	"math/big"
 )
 

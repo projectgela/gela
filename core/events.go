@@ -17,8 +17,8 @@
 package core
 
 import (
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/types"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/types"
 )
 
 // TxPreEvent is posted when a transaction enters the transaction pool.

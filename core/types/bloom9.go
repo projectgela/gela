@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/tomochain/tomochain/common/hexutil"
-	"github.com/tomochain/tomochain/crypto"
+	"github.com/projectgela/gela/common/hexutil"
+	"github.com/projectgela/gela/crypto"
 )
 
 type bytesBacked interface {

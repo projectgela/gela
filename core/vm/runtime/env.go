@@ -17,9 +17,9 @@
 package runtime
 
 import (
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/core/vm"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/core/vm"
 )
 
 func NewEnv(cfg *Config) *vm.EVM {

@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/ethdb"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/ethdb"
 )
 
 func init() {

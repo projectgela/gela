@@ -20,11 +20,11 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/rlp"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/rlp"
 )
 
 // Prove constructs a merkle proof for key. The result contains all encoded nodes

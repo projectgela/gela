@@ -20,9 +20,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/log"
 )
 
 // secureKeyPrefix is the database key prefix used to store trie node preimages.

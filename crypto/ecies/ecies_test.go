@@ -39,7 +39,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/tomochain/tomochain/crypto"
+	"github.com/projectgela/gela/crypto"
 )
 
 //var dumpEnc bool

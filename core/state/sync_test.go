@@ -21,10 +21,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/trie"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/trie"
 )
 
 // testAccount is the data associated with an account used by the state tests.

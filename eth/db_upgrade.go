@@ -21,11 +21,11 @@ import (
 	"bytes"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/rlp"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/rlp"
 )
 
 var deduplicateData = []byte("dbUpgrade_20170714deduplicateData")

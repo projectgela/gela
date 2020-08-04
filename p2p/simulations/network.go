@@ -24,11 +24,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/event"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/p2p"
-	"github.com/tomochain/tomochain/p2p/discover"
-	"github.com/tomochain/tomochain/p2p/simulations/adapters"
+	"github.com/projectgela/gela/event"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/p2p"
+	"github.com/projectgela/gela/p2p/discover"
+	"github.com/projectgela/gela/p2p/simulations/adapters"
 )
 
 var dialBanTimeout = 200 * time.Millisecond

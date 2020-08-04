@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tomochain/tomochain/crypto/sha3"
+	"github.com/projectgela/gela/crypto/sha3"
 )
 
 /*

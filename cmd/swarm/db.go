@@ -22,9 +22,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/tomochain/tomochain/cmd/utils"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/swarm/storage"
+	"github.com/projectgela/gela/cmd/utils"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/swarm/storage"
 	"gopkg.in/urfave/cli.v1"
 )
 

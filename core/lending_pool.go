@@ -24,17 +24,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/consensus/posv"
+	"github.com/projectgela/gela/consensus/posv"
 
-	"github.com/tomochain/tomochain/consensus"
-	"github.com/tomochain/tomochain/tomoxlending/lendingstate"
+	"github.com/projectgela/gela/consensus"
+	"github.com/projectgela/gela/gelxlending/lendingstate"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/state"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/event"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/state"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/event"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/params"
 	"gopkg.in/karalabe/cookiejar.v2/collections/prque"
 )
 

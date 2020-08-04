@@ -25,14 +25,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/mclock"
-	"github.com/tomochain/tomochain/event"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/p2p/discover"
-	"github.com/tomochain/tomochain/p2p/discv5"
-	"github.com/tomochain/tomochain/p2p/nat"
-	"github.com/tomochain/tomochain/p2p/netutil"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/mclock"
+	"github.com/projectgela/gela/event"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/p2p/discover"
+	"github.com/projectgela/gela/p2p/discv5"
+	"github.com/projectgela/gela/p2p/nat"
+	"github.com/projectgela/gela/p2p/netutil"
 )
 
 const (

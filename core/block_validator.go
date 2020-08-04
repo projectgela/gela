@@ -18,15 +18,15 @@ package core
 
 import (
 	"fmt"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/consensus"
-	"github.com/tomochain/tomochain/consensus/posv"
-	"github.com/tomochain/tomochain/core/state"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/params"
-	"github.com/tomochain/tomochain/tomox/tradingstate"
-	"github.com/tomochain/tomochain/tomoxlending/lendingstate"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/consensus"
+	"github.com/projectgela/gela/consensus/posv"
+	"github.com/projectgela/gela/core/state"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/params"
+	"github.com/projectgela/gela/gelx/tradingstate"
+	"github.com/projectgela/gela/gelxlending/lendingstate"
 )
 
 // BlockValidator is responsible for validating block headers, uncles and

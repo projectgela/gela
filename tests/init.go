@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/params"
 )
 
 // This table defines supported forks and their chain config.

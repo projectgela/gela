@@ -24,13 +24,13 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/hexutil"
-	"github.com/tomochain/tomochain/consensus/ethash"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/eth/downloader"
-	"github.com/tomochain/tomochain/eth/gasprice"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/hexutil"
+	"github.com/projectgela/gela/consensus/ethash"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/eth/downloader"
+	"github.com/projectgela/gela/eth/gasprice"
+	"github.com/projectgela/gela/params"
 )
 
 // DefaultConfig contains default settings for use on the Ethereum main net.

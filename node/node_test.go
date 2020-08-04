@@ -24,9 +24,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/p2p"
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/p2p"
+	"github.com/projectgela/gela/rpc"
 )
 
 var (

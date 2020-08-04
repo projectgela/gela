@@ -23,7 +23,7 @@ import (
 	"testing"
 
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/tomochain/tomochain/internal/cmdtest"
+	"github.com/projectgela/gela/internal/cmdtest"
 )
 
 func tmpdir(t *testing.T) string {

@@ -26,9 +26,9 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/swarm/storage"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/swarm/storage"
 )
 
 const maxParallelFiles = 5

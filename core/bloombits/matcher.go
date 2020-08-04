@@ -26,8 +26,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tomochain/tomochain/common/bitutil"
-	"github.com/tomochain/tomochain/crypto"
+	"github.com/projectgela/gela/common/bitutil"
+	"github.com/projectgela/gela/crypto"
 )
 
 // bloomIndexes represents the bit indexes inside the bloom filter that belong

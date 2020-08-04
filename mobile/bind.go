@@ -22,10 +22,10 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/tomochain/tomochain/accounts/abi"
-	"github.com/tomochain/tomochain/accounts/abi/bind"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/types"
+	"github.com/projectgela/gela/accounts/abi"
+	"github.com/projectgela/gela/accounts/abi/bind"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/types"
 )
 
 // Signer is an interaface defining the callback when a contract requires a

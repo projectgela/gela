@@ -25,11 +25,11 @@ import (
 	"sync"
 	"time"
 
-	ethereum "github.com/tomochain/tomochain"
-	"github.com/tomochain/tomochain/accounts"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/log"
+	ethereum "github.com/projectgela/gela"
+	"github.com/projectgela/gela/accounts"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/log"
 	"github.com/karalabe/hid"
 )
 

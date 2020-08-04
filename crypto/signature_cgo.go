@@ -23,8 +23,8 @@ import (
 	"crypto/elliptic"
 	"fmt"
 
-	"github.com/tomochain/tomochain/common/math"
-	"github.com/tomochain/tomochain/crypto/secp256k1"
+	"github.com/projectgela/gela/common/math"
+	"github.com/projectgela/gela/crypto/secp256k1"
 )
 
 // Ecrecover returns the uncompressed public key that created the given signature.

@@ -20,9 +20,9 @@ import (
 	"container/ring"
 	"sync"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/log"
 )
 
 // headerRetriever is used by the unconfirmed block set to verify whether a previously

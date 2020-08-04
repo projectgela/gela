@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tomochain/tomochain/accounts/keystore"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/accounts/keystore"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/log"
 )
 
 // deployNode creates a new node configuration based on some user input.

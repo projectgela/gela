@@ -22,13 +22,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/core/state"
-	"github.com/tomochain/tomochain/crypto/sha3"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/trie"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/core/state"
+	"github.com/projectgela/gela/crypto/sha3"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/trie"
 )
 
 // stateReq represents a batch of state fetch requests groupped together into

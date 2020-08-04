@@ -32,14 +32,14 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/node"
-	"github.com/tomochain/tomochain/p2p"
-	"github.com/tomochain/tomochain/p2p/discover"
-	"github.com/tomochain/tomochain/p2p/simulations"
-	"github.com/tomochain/tomochain/p2p/simulations/adapters"
-	"github.com/tomochain/tomochain/rlp"
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/node"
+	"github.com/projectgela/gela/p2p"
+	"github.com/projectgela/gela/p2p/discover"
+	"github.com/projectgela/gela/p2p/simulations"
+	"github.com/projectgela/gela/p2p/simulations/adapters"
+	"github.com/projectgela/gela/rlp"
+	"github.com/projectgela/gela/rpc"
 )
 
 // ProtocolTester is the tester environment used for unit testing protocol

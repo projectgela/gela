@@ -30,8 +30,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tomochain/tomochain/accounts/keystore"
-	"github.com/tomochain/tomochain/core/types"
+	"github.com/projectgela/gela/accounts/keystore"
+	"github.com/projectgela/gela/core/types"
 )
 
 // Tests that the account management snippets work correctly.

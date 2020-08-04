@@ -21,11 +21,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/crypto/sha3"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/rlp"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/crypto/sha3"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/rlp"
 )
 
 // Tests block header storage and retrieval operations.

@@ -25,8 +25,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/tomochain/tomochain/accounts"
-	"github.com/tomochain/tomochain/crypto"
+	"github.com/projectgela/gela/accounts"
+	"github.com/projectgela/gela/crypto"
 	"github.com/pborman/uuid"
 	"golang.org/x/crypto/pbkdf2"
 )

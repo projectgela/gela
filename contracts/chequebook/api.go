@@ -20,7 +20,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/tomochain/tomochain/common"
+	"github.com/projectgela/gela/common"
 )
 
 const Version = "1.0"

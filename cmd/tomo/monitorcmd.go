@@ -25,9 +25,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tomochain/tomochain/cmd/utils"
-	"github.com/tomochain/tomochain/node"
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/cmd/utils"
+	"github.com/projectgela/gela/node"
+	"github.com/projectgela/gela/rpc"
 	"github.com/gizak/termui"
 	"gopkg.in/urfave/cli.v1"
 )

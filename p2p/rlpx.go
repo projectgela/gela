@@ -35,12 +35,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/crypto/ecies"
-	"github.com/tomochain/tomochain/crypto/secp256k1"
-	"github.com/tomochain/tomochain/crypto/sha3"
-	"github.com/tomochain/tomochain/p2p/discover"
-	"github.com/tomochain/tomochain/rlp"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/crypto/ecies"
+	"github.com/projectgela/gela/crypto/secp256k1"
+	"github.com/projectgela/gela/crypto/sha3"
+	"github.com/projectgela/gela/p2p/discover"
+	"github.com/projectgela/gela/rlp"
 	"github.com/golang/snappy"
 )
 

@@ -20,11 +20,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/tomochain/tomochain/accounts/abi/bind"
-	"github.com/tomochain/tomochain/accounts/abi/bind/backends"
-	"github.com/tomochain/tomochain/contracts/ens/contract"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/crypto"
+	"github.com/projectgela/gela/accounts/abi/bind"
+	"github.com/projectgela/gela/accounts/abi/bind/backends"
+	"github.com/projectgela/gela/contracts/ens/contract"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/crypto"
 )
 
 var (

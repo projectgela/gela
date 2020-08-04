@@ -32,12 +32,12 @@ Building `tomo` requires both a Go (1.7+) and C compiler; install both of these.
 Once the dependencies are installed, just run the below commands:
 
 ```bash
-$ git clone https://github.com/tomochain/tomochain tomochain
+$ git clone https://github.com/projectgela/gela tomochain
 $ cd tomochain
 $ make tomo
 ```
 
-Alternatively, you could quickly download our pre-complied binary from our [github release page](https://github.com/tomochain/tomochain/releases)
+Alternatively, you could quickly download our pre-complied binary from our [github release page](https://github.com/projectgela/gela/releases)
 
 ## Running `tomo`
 
@@ -161,7 +161,7 @@ tomo  --syncmode "full" \
 --targetgaslimit: Target gas limit sets the artificial target gas floor for the blocks to mine (default: 4712388)
 --bootnode: bootnode information to help to discover other nodes in the network
 --gcmode: blockchain garbage collection mode ("full", "archive")
---synmode: blockchain sync mode ("fast", "full", or "light". More detail: https://github.com/tomochain/tomochain/blob/master/eth/downloader/modes.go#L24)           
+--synmode: blockchain sync mode ("fast", "full", or "light". More detail: https://github.com/projectgela/gela/blob/master/eth/downloader/modes.go#L24)           
 --ethstats: send data to stats website
 ```
 To see all flags usage
@@ -188,7 +188,7 @@ Please also make sure your contributions adhere to the base coding guidelines:
 - Code must adhere to official Go [formatting](https://golang.org/doc/effective_go.html#formatting) guidelines (i.e uses [gofmt](https://golang.org/cmd/gofmt/)).
 - Code comments must adhere to the official Go [commentary](https://golang.org/doc/effective_go.html#commentary) guidelines.
 - Pull requests need to be based on and opened against the `master` branch.
-- Any code you are trying to contribute must be well-explained as an issue on our [github issue page](https://github.com/tomochain/tomochain/issues)
+- Any code you are trying to contribute must be well-explained as an issue on our [github issue page](https://github.com/projectgela/gela/issues)
 - Commit messages should be short but clear enough and should refer to the corresponding pre-logged issue mentioned above.
 
 For technical discussion, feel free to join our chat at [Gitter](https://gitter.im/tomochain/tomochain).

@@ -22,10 +22,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/p2p"
-	"github.com/tomochain/tomochain/rlp"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/p2p"
+	"github.com/projectgela/gela/rlp"
 	mapset "github.com/deckarep/golang-set"
 )
 

@@ -27,13 +27,13 @@ import (
 	"time"
 
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/tomochain/tomochain/accounts"
-	"github.com/tomochain/tomochain/accounts/keystore"
-	"github.com/tomochain/tomochain/internal/cmdtest"
-	"github.com/tomochain/tomochain/node"
-	"github.com/tomochain/tomochain/p2p"
-	"github.com/tomochain/tomochain/rpc"
-	"github.com/tomochain/tomochain/swarm"
+	"github.com/projectgela/gela/accounts"
+	"github.com/projectgela/gela/accounts/keystore"
+	"github.com/projectgela/gela/internal/cmdtest"
+	"github.com/projectgela/gela/node"
+	"github.com/projectgela/gela/p2p"
+	"github.com/projectgela/gela/rpc"
+	"github.com/projectgela/gela/swarm"
 )
 
 func init() {

@@ -1,11 +1,11 @@
 package trc21issuer
 
 import (
-	"github.com/tomochain/tomochain/accounts/abi/bind"
-	"github.com/tomochain/tomochain/accounts/abi/bind/backends"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/crypto"
+	"github.com/projectgela/gela/accounts/abi/bind"
+	"github.com/projectgela/gela/accounts/abi/bind/backends"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/crypto"
 	"math/big"
 	"testing"
 )

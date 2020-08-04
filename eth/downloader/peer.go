@@ -29,9 +29,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/event"
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/event"
+	"github.com/projectgela/gela/log"
 )
 
 const (

@@ -41,23 +41,23 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/accounts"
-	"github.com/tomochain/tomochain/accounts/keystore"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/eth"
-	"github.com/tomochain/tomochain/eth/downloader"
-	"github.com/tomochain/tomochain/ethclient"
-	"github.com/tomochain/tomochain/ethstats"
-	"github.com/tomochain/tomochain/les"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/node"
-	"github.com/tomochain/tomochain/p2p"
-	"github.com/tomochain/tomochain/p2p/discover"
-	"github.com/tomochain/tomochain/p2p/discv5"
-	"github.com/tomochain/tomochain/p2p/nat"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/accounts"
+	"github.com/projectgela/gela/accounts/keystore"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/eth"
+	"github.com/projectgela/gela/eth/downloader"
+	"github.com/projectgela/gela/ethclient"
+	"github.com/projectgela/gela/ethstats"
+	"github.com/projectgela/gela/les"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/node"
+	"github.com/projectgela/gela/p2p"
+	"github.com/projectgela/gela/p2p/discover"
+	"github.com/projectgela/gela/p2p/discv5"
+	"github.com/projectgela/gela/p2p/nat"
+	"github.com/projectgela/gela/params"
 	"golang.org/x/net/websocket"
 )
 
@@ -450,7 +450,7 @@ func (f *faucet) apiHandler(conn *websocket.Conn) {
 		case *noauthFlag:
 			username, avatar, address, err = authNoAuth(msg.URL)
 		default:
-			err = errors.New("Something funky happened, please open an issue at https://github.com/tomochain/tomochain/issues")
+			err = errors.New("Something funky happened, please open an issue at https://github.com/projectgela/gela/issues")
 		}
 		if err != nil {
 			if err = sendError(conn, err); err != nil {

@@ -27,12 +27,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tomochain/tomochain/event"
-	"github.com/tomochain/tomochain/node"
-	"github.com/tomochain/tomochain/p2p"
-	"github.com/tomochain/tomochain/p2p/discover"
-	"github.com/tomochain/tomochain/p2p/simulations/adapters"
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/event"
+	"github.com/projectgela/gela/node"
+	"github.com/projectgela/gela/p2p"
+	"github.com/projectgela/gela/p2p/discover"
+	"github.com/projectgela/gela/p2p/simulations/adapters"
+	"github.com/projectgela/gela/rpc"
 )
 
 // testService implements the node.Service interface and provides protocols

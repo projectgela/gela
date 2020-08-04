@@ -23,10 +23,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tomochain/tomochain/cmd/utils"
-	"github.com/tomochain/tomochain/consensus/ethash"
-	"github.com/tomochain/tomochain/eth"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/cmd/utils"
+	"github.com/projectgela/gela/consensus/ethash"
+	"github.com/projectgela/gela/eth"
+	"github.com/projectgela/gela/params"
 	"gopkg.in/urfave/cli.v1"
 )
 

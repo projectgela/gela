@@ -19,7 +19,7 @@ package vm
 import (
 	"fmt"
 
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/params"
 )
 
 func makeStackFunc(pop, push int) stackValidationFunc {

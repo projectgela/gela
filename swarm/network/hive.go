@@ -22,13 +22,13 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/metrics"
-	"github.com/tomochain/tomochain/p2p/discover"
-	"github.com/tomochain/tomochain/p2p/netutil"
-	"github.com/tomochain/tomochain/swarm/network/kademlia"
-	"github.com/tomochain/tomochain/swarm/storage"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/metrics"
+	"github.com/projectgela/gela/p2p/discover"
+	"github.com/projectgela/gela/p2p/netutil"
+	"github.com/projectgela/gela/swarm/network/kademlia"
+	"github.com/projectgela/gela/swarm/storage"
 )
 
 // Hive is the logistic manager of the swarm

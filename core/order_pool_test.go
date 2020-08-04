@@ -2,11 +2,11 @@ package core
 
 import (
 	"context"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/ethclient"
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/ethclient"
+	"github.com/projectgela/gela/rpc"
 	"log"
 	"math/big"
 	"strconv"

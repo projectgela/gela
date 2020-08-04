@@ -24,17 +24,17 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/eth"
-	"github.com/tomochain/tomochain/eth/downloader"
-	"github.com/tomochain/tomochain/ethclient"
-	"github.com/tomochain/tomochain/ethstats"
-	"github.com/tomochain/tomochain/les"
-	"github.com/tomochain/tomochain/node"
-	"github.com/tomochain/tomochain/p2p"
-	"github.com/tomochain/tomochain/p2p/nat"
-	"github.com/tomochain/tomochain/params"
-	whisper "github.com/tomochain/tomochain/whisper/whisperv6"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/eth"
+	"github.com/projectgela/gela/eth/downloader"
+	"github.com/projectgela/gela/ethclient"
+	"github.com/projectgela/gela/ethstats"
+	"github.com/projectgela/gela/les"
+	"github.com/projectgela/gela/node"
+	"github.com/projectgela/gela/p2p"
+	"github.com/projectgela/gela/p2p/nat"
+	"github.com/projectgela/gela/params"
+	whisper "github.com/projectgela/gela/whisper/whisperv6"
 )
 
 // NodeConfig represents the collection of configuration values to fine tune the Geth

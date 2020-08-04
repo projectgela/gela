@@ -29,15 +29,15 @@ import (
 	"unicode"
 
 	"github.com/naoina/toml"
-	"github.com/tomochain/tomochain/cmd/utils"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/eth"
-	"github.com/tomochain/tomochain/internal/debug"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/node"
-	"github.com/tomochain/tomochain/params"
-	"github.com/tomochain/tomochain/tomox"
-	whisper "github.com/tomochain/tomochain/whisper/whisperv6"
+	"github.com/projectgela/gela/cmd/utils"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/eth"
+	"github.com/projectgela/gela/internal/debug"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/node"
+	"github.com/projectgela/gela/params"
+	"github.com/projectgela/gela/gelx"
+	whisper "github.com/projectgela/gela/whisper/whisperv6"
 )
 
 var (

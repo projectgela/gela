@@ -25,7 +25,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/log"
 	mapset "github.com/deckarep/golang-set"
 )
 

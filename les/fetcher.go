@@ -22,13 +22,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/mclock"
-	"github.com/tomochain/tomochain/consensus"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/light"
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/mclock"
+	"github.com/projectgela/gela/consensus"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/light"
+	"github.com/projectgela/gela/log"
 )
 
 const (

@@ -20,8 +20,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/crypto"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/crypto"
 )
 
 func TestConfig(t *testing.T) {

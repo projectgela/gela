@@ -23,8 +23,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/tomochain/tomochain/common/math"
-	"github.com/tomochain/tomochain/core/vm"
+	"github.com/projectgela/gela/common/math"
+	"github.com/projectgela/gela/core/vm"
 )
 
 // Compiler contains information about the parsed source

@@ -30,10 +30,10 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/metrics"
-	"github.com/tomochain/tomochain/swarm/storage"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/metrics"
+	"github.com/projectgela/gela/swarm/storage"
 )
 
 var hashMatcher = regexp.MustCompile("^[0-9A-Fa-f]{64}")

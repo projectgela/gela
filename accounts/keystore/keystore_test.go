@@ -26,9 +26,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tomochain/tomochain/accounts"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/event"
+	"github.com/projectgela/gela/accounts"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/event"
 )
 
 var testSigData = make([]byte, 32)

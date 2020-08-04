@@ -31,9 +31,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/crypto/secp256k1"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/crypto/secp256k1"
 )
 
 const NodeIDBits = 512

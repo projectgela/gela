@@ -19,7 +19,7 @@ package swarm
 import (
 	"testing"
 
-	"github.com/tomochain/tomochain/common"
+	"github.com/projectgela/gela/common"
 )
 
 func TestParseEnsAPIAddress(t *testing.T) {

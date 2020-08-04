@@ -19,7 +19,7 @@ package ethapi
 import (
 	"sync"
 
-	"github.com/tomochain/tomochain/common"
+	"github.com/projectgela/gela/common"
 )
 
 type AddrLocker struct {

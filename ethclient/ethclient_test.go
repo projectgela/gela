@@ -16,7 +16,7 @@
 
 package ethclient
 
-import "github.com/tomochain/tomochain"
+import "github.com/projectgela/gela"
 
 // Verify that Client implements the ethereum interfaces.
 var (

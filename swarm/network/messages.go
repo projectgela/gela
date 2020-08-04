@@ -21,11 +21,11 @@ import (
 	"net"
 	"time"
 
-	"github.com/tomochain/tomochain/contracts/chequebook"
-	"github.com/tomochain/tomochain/p2p/discover"
-	"github.com/tomochain/tomochain/swarm/network/kademlia"
-	"github.com/tomochain/tomochain/swarm/services/swap"
-	"github.com/tomochain/tomochain/swarm/storage"
+	"github.com/projectgela/gela/contracts/chequebook"
+	"github.com/projectgela/gela/p2p/discover"
+	"github.com/projectgela/gela/swarm/network/kademlia"
+	"github.com/projectgela/gela/swarm/services/swap"
+	"github.com/projectgela/gela/swarm/storage"
 )
 
 /*

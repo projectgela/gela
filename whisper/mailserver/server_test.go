@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/crypto"
-	whisper "github.com/tomochain/tomochain/whisper/whisperv6"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/crypto"
+	whisper "github.com/projectgela/gela/whisper/whisperv6"
 )
 
 const powRequirement = 0.00001

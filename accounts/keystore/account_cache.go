@@ -27,9 +27,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/accounts"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/accounts"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/log"
 	mapset "github.com/deckarep/golang-set"
 )
 

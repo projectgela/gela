@@ -1,7 +1,7 @@
 package eth
 
 import (
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/params"
 	"math/big"
 	"testing"
 )

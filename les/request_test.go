@@ -21,12 +21,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/eth"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/light"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/eth"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/light"
 )
 
 var testBankSecureTrieKey = secAddr(testBankAddress)

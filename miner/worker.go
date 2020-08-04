@@ -21,8 +21,8 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/tomochain/tomochain/accounts"
-	"github.com/tomochain/tomochain/tomoxlending/lendingstate"
+	"github.com/projectgela/gela/accounts"
+	"github.com/projectgela/gela/gelxlending/lendingstate"
 
 	"math/big"
 	"os"
@@ -30,22 +30,22 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tomochain/tomochain/tomox/tradingstate"
+	"github.com/projectgela/gela/gelx/tradingstate"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/consensus"
-	"github.com/tomochain/tomochain/consensus/misc"
-	"github.com/tomochain/tomochain/consensus/posv"
-	"github.com/tomochain/tomochain/contracts"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/core/state"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/core/vm"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/event"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/consensus"
+	"github.com/projectgela/gela/consensus/misc"
+	"github.com/projectgela/gela/consensus/posv"
+	"github.com/projectgela/gela/contracts"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/core/state"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/core/vm"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/event"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/params"
 )
 
 const (
@@ -663,7 +663,7 @@ func (self *worker) commitNewWork() {
 					}
 				}
 				// won't grasp tx at checkpoint
-				//https://github.com/tomochain/tomochain-v1/pull/416
+				//https://github.com/projectgela/gela-v1/pull/416
 				if header.Number.Uint64()%self.config.Posv.Epoch != 0 {
 					log.Debug("Start processing order pending")
 					tradingOrderPending, _ := self.eth.OrderPool().Pending()

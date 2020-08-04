@@ -33,7 +33,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/log"
 )
 
 // Handler is the global debugging handler.

@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/tomochain/tomochain/common/math"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/common/math"
+	"github.com/projectgela/gela/params"
 )
 
 // Config are the configuration options for the Interpreter

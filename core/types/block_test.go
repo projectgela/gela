@@ -21,8 +21,8 @@ import (
 	"testing"
 
 	"bytes"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/rlp"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/rlp"
 	"reflect"
 )
 

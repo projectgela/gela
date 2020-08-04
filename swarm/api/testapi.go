@@ -17,7 +17,7 @@
 package api
 
 import (
-	"github.com/tomochain/tomochain/swarm/network"
+	"github.com/projectgela/gela/swarm/network"
 )
 
 type Control struct {

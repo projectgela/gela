@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tomochain/tomochain/rpc"
-	"github.com/tomochain/tomochain/swarm"
-	"github.com/tomochain/tomochain/swarm/api"
+	"github.com/projectgela/gela/rpc"
+	"github.com/projectgela/gela/swarm"
+	"github.com/projectgela/gela/swarm/api"
 
 	"github.com/docker/docker/pkg/reexec"
 )

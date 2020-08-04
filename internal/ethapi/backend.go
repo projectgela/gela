@@ -19,24 +19,24 @@ package ethapi
 
 import (
 	"context"
-	"github.com/tomochain/tomochain/tomoxlending"
+	"github.com/projectgela/gela/gelxlending"
 	"math/big"
 
-	"github.com/tomochain/tomochain/tomox"
+	"github.com/projectgela/gela/gelx"
 
-	"github.com/tomochain/tomochain/accounts"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/consensus"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/core/state"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/core/vm"
-	"github.com/tomochain/tomochain/eth/downloader"
-	"github.com/tomochain/tomochain/ethclient"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/event"
-	"github.com/tomochain/tomochain/params"
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/accounts"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/consensus"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/core/state"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/core/vm"
+	"github.com/projectgela/gela/eth/downloader"
+	"github.com/projectgela/gela/ethclient"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/event"
+	"github.com/projectgela/gela/params"
+	"github.com/projectgela/gela/rpc"
 )
 
 // Backend interface provides the common API services (that are provided by

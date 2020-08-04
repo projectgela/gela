@@ -27,11 +27,11 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/bitutil"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/crypto/sha3"
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/bitutil"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/crypto/sha3"
+	"github.com/projectgela/gela/log"
 )
 
 const (

@@ -22,7 +22,7 @@ package storage
 import (
 	"fmt"
 
-	"github.com/tomochain/tomochain/compression/rle"
+	"github.com/projectgela/gela/compression/rle"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/iterator"
 	"github.com/syndtr/goleveldb/leveldb/opt"

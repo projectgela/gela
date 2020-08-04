@@ -27,13 +27,13 @@ import (
 	"sync"
 
 	"github.com/prometheus/prometheus/util/flock"
-	"github.com/tomochain/tomochain/accounts"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/event"
-	"github.com/tomochain/tomochain/internal/debug"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/p2p"
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/accounts"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/event"
+	"github.com/projectgela/gela/internal/debug"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/p2p"
+	"github.com/projectgela/gela/rpc"
 )
 
 // Node is a container on which services can be registered.

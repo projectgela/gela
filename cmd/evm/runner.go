@@ -27,16 +27,16 @@ import (
 
 	goruntime "runtime"
 
-	"github.com/tomochain/tomochain/cmd/evm/internal/compiler"
-	"github.com/tomochain/tomochain/cmd/utils"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/core/state"
-	"github.com/tomochain/tomochain/core/vm"
-	"github.com/tomochain/tomochain/core/vm/runtime"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/cmd/evm/internal/compiler"
+	"github.com/projectgela/gela/cmd/utils"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/core/state"
+	"github.com/projectgela/gela/core/vm"
+	"github.com/projectgela/gela/core/vm/runtime"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/params"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

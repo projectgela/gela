@@ -19,11 +19,11 @@ package node
 import (
 	"reflect"
 
-	"github.com/tomochain/tomochain/accounts"
-	"github.com/tomochain/tomochain/ethdb"
-	"github.com/tomochain/tomochain/event"
-	"github.com/tomochain/tomochain/p2p"
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/accounts"
+	"github.com/projectgela/gela/ethdb"
+	"github.com/projectgela/gela/event"
+	"github.com/projectgela/gela/p2p"
+	"github.com/projectgela/gela/rpc"
 )
 
 // ServiceContext is a collection of service independent options inherited from

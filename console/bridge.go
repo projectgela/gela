@@ -23,9 +23,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tomochain/tomochain/accounts/usbwallet"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/rpc"
+	"github.com/projectgela/gela/accounts/usbwallet"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/rpc"
 	"github.com/robertkrimen/otto"
 )
 

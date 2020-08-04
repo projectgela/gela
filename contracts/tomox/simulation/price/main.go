@@ -3,17 +3,17 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/tomochain/tomochain/core/state"
-	"github.com/tomochain/tomochain/tomoxlending/lendingstate"
+	"github.com/projectgela/gela/core/state"
+	"github.com/projectgela/gela/gelxlending/lendingstate"
 	"math/big"
 	"os"
 	"time"
 
-	"github.com/tomochain/tomochain/accounts/abi/bind"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/contracts/tomox"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/ethclient"
+	"github.com/projectgela/gela/accounts/abi/bind"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/contracts/tomox"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/ethclient"
 )
 
 func main() {

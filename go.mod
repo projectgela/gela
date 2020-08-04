@@ -1,4 +1,4 @@
-module github.com/tomochain/tomochain
+module github.com/projectgela/gela
 
 go 1.12
 

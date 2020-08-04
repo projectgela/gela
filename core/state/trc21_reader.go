@@ -2,7 +2,7 @@ package state
 
 import (
 	"bytes"
-	"github.com/tomochain/tomochain/common"
+	"github.com/projectgela/gela/common"
 	"github.com/hashicorp/golang-lru"
 	"math/big"
 )

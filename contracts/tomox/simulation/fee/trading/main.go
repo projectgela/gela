@@ -3,17 +3,17 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/tomochain/tomochain/contracts/tomox/simulation"
+	"github.com/projectgela/gela/contracts/tomox/simulation"
 	"math/big"
 	"os"
 	"strconv"
 	"time"
 
-	"github.com/tomochain/tomochain/accounts/abi/bind"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/contracts/tomox"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/ethclient"
+	"github.com/projectgela/gela/accounts/abi/bind"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/contracts/tomox"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/ethclient"
 )
 
 func main() {

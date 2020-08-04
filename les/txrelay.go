@@ -19,8 +19,8 @@ package les
 import (
 	"sync"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/types"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/types"
 )
 
 type ltrInfo struct {

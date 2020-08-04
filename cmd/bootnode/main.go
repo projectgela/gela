@@ -24,13 +24,13 @@ import (
 	"net"
 	"os"
 
-	"github.com/tomochain/tomochain/cmd/utils"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/p2p/discover"
-	"github.com/tomochain/tomochain/p2p/discv5"
-	"github.com/tomochain/tomochain/p2p/nat"
-	"github.com/tomochain/tomochain/p2p/netutil"
+	"github.com/projectgela/gela/cmd/utils"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/p2p/discover"
+	"github.com/projectgela/gela/p2p/discv5"
+	"github.com/projectgela/gela/p2p/nat"
+	"github.com/projectgela/gela/p2p/netutil"
 )
 
 func main() {

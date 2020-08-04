@@ -22,9 +22,9 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/math"
-	"github.com/tomochain/tomochain/core/vm"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/math"
+	"github.com/projectgela/gela/core/vm"
 )
 
 type JSONLogger struct {

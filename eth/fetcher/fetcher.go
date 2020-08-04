@@ -23,10 +23,10 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/consensus"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/consensus"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/log"
 	"gopkg.in/karalabe/cookiejar.v2/collections/prque"
 )
 

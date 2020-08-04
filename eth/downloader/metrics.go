@@ -19,7 +19,7 @@
 package downloader
 
 import (
-	"github.com/tomochain/tomochain/metrics"
+	"github.com/projectgela/gela/metrics"
 )
 
 var (

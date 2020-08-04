@@ -27,10 +27,10 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/crypto/ecies"
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/crypto/ecies"
+	"github.com/projectgela/gela/log"
 )
 
 // Options specifies the exact way a message should be wrapped into an Envelope.

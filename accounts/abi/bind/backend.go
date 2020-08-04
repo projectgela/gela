@@ -21,9 +21,9 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/tomochain/tomochain"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/types"
+	"github.com/projectgela/gela"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/types"
 )
 
 var (

@@ -26,11 +26,11 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/swarm/api"
-	swarm "github.com/tomochain/tomochain/swarm/api/client"
-	"github.com/tomochain/tomochain/swarm/storage"
-	"github.com/tomochain/tomochain/swarm/testutil"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/swarm/api"
+	swarm "github.com/projectgela/gela/swarm/api/client"
+	"github.com/projectgela/gela/swarm/storage"
+	"github.com/projectgela/gela/swarm/testutil"
 )
 
 func TestBzzGetPath(t *testing.T) {

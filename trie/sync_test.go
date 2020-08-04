@@ -20,8 +20,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/ethdb"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/ethdb"
 )
 
 // makeTestTrie create a sample test trie to test node-wise reconstruction.

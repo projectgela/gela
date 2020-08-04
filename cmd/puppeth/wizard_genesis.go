@@ -24,22 +24,22 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/params"
 
 	"context"
 	"math/big"
 
-	"github.com/tomochain/tomochain/accounts/abi/bind"
-	"github.com/tomochain/tomochain/accounts/abi/bind/backends"
-	blockSignerContract "github.com/tomochain/tomochain/contracts/blocksigner"
-	multiSignWalletContract "github.com/tomochain/tomochain/contracts/multisigwallet"
-	randomizeContract "github.com/tomochain/tomochain/contracts/randomize"
-	validatorContract "github.com/tomochain/tomochain/contracts/validator"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/rlp"
+	"github.com/projectgela/gela/accounts/abi/bind"
+	"github.com/projectgela/gela/accounts/abi/bind/backends"
+	blockSignerContract "github.com/projectgela/gela/contracts/blocksigner"
+	multiSignWalletContract "github.com/projectgela/gela/contracts/multisigwallet"
+	randomizeContract "github.com/projectgela/gela/contracts/randomize"
+	validatorContract "github.com/projectgela/gela/contracts/validator"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/rlp"
 )
 
 // makeGenesis creates a new genesis struct based on some user input.
@@ -122,8 +122,8 @@ func (w *wizard) makeGenesis() {
 		genesis.Config.Posv.Period = uint64(w.readDefaultInt(2))
 
 		fmt.Println()
-		fmt.Println("How many Ethers should be rewarded to masternode? (default = 10)")
-		genesis.Config.Posv.Reward = uint64(w.readDefaultInt(10))
+		fmt.Println("How many Gels should be rewarded to masternode? (default = 50)")
+		genesis.Config.Posv.Reward = uint64(w.readDefaultInt(50))
 
 		fmt.Println()
 		fmt.Println("Who own the first masternodes? (mandatory)")
@@ -231,8 +231,8 @@ func (w *wizard) makeGenesis() {
 		code, _ = contractBackend.CodeAt(ctx, multiSignWalletAddr, nil)
 		storage = make(map[common.Hash]common.Hash)
 		contractBackend.ForEachStorageAt(ctx, multiSignWalletAddr, nil, f)
-		fBalance := big.NewInt(0) // 16m
-		fBalance.Add(fBalance, big.NewInt(16*1000*1000))
+		fBalance := big.NewInt(0) // 0m
+		fBalance.Add(fBalance, big.NewInt(0*1000*1000))
 		fBalance.Mul(fBalance, big.NewInt(1000000000000000000))
 		genesis.Alloc[common.HexToAddress(common.FoudationAddr)] = core.GenesisAccount{
 			Balance: fBalance,
@@ -299,7 +299,7 @@ func (w *wizard) makeGenesis() {
 		contractBackend.ForEachStorageAt(ctx, multiSignWalletTeamAddr, nil, f)
 		// Team balance.
 		balance := big.NewInt(0) // 12m
-		balance.Add(balance, big.NewInt(12*1000*1000))
+		balance.Add(balance, big.NewInt(2*100*1000))
 		balance.Mul(balance, big.NewInt(1000000000000000000))
 		subBalance := big.NewInt(0) // i * 50k
 		subBalance.Add(subBalance, big.NewInt(int64(len(signers))*50*1000))
@@ -314,8 +314,8 @@ func (w *wizard) makeGenesis() {
 		fmt.Println()
 		fmt.Println("What is swap wallet address for fund 55m tomo?")
 		swapAddr := *w.readAddress()
-		baseBalance := big.NewInt(0) // 55m
-		baseBalance.Add(baseBalance, big.NewInt(55*1000*1000))
+		baseBalance := big.NewInt(0) // 0m
+		baseBalance.Add(baseBalance, big.NewInt(0*1000*1000))
 		baseBalance.Mul(baseBalance, big.NewInt(1000000000000000000))
 		genesis.Alloc[swapAddr] = core.GenesisAccount{
 			Balance: baseBalance,

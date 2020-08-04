@@ -25,10 +25,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/mclock"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/mclock"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/log"
 )
 
 const (

@@ -23,8 +23,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/tomochain/tomochain/common/mclock"
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/common/mclock"
+	"github.com/projectgela/gela/log"
 )
 
 const (

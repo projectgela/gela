@@ -17,9 +17,9 @@
 package vm
 
 import (
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/math"
-	"github.com/tomochain/tomochain/params"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/math"
+	"github.com/projectgela/gela/params"
 )
 
 // memoryGasCosts calculates the quadratic gas for memory expansion. It does so

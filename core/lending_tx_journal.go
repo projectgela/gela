@@ -20,10 +20,10 @@ import (
 	"io"
 	"os"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/core/types"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/rlp"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/core/types"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/rlp"
 )
 
 // lendingtxJournal is a rotating log of transactions with the aim of storing locally

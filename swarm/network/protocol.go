@@ -37,13 +37,13 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/tomochain/tomochain/contracts/chequebook"
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/metrics"
-	"github.com/tomochain/tomochain/p2p"
-	bzzswap "github.com/tomochain/tomochain/swarm/services/swap"
-	"github.com/tomochain/tomochain/swarm/services/swap/swap"
-	"github.com/tomochain/tomochain/swarm/storage"
+	"github.com/projectgela/gela/contracts/chequebook"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/metrics"
+	"github.com/projectgela/gela/p2p"
+	bzzswap "github.com/projectgela/gela/swarm/services/swap"
+	"github.com/projectgela/gela/swarm/services/swap/swap"
+	"github.com/projectgela/gela/swarm/storage"
 )
 
 //metrics variables

@@ -19,10 +19,10 @@ package metrics
 import (
 	"time"
 
-	"github.com/tomochain/tomochain/cmd/utils"
-	"github.com/tomochain/tomochain/log"
-	gethmetrics "github.com/tomochain/tomochain/metrics"
-	"github.com/tomochain/tomochain/metrics/influxdb"
+	"github.com/projectgela/gela/cmd/utils"
+	"github.com/projectgela/gela/log"
+	gethmetrics "github.com/projectgela/gela/metrics"
+	"github.com/projectgela/gela/metrics/influxdb"
 	"gopkg.in/urfave/cli.v1"
 )
 

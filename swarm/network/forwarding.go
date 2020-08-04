@@ -21,8 +21,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/swarm/storage"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/swarm/storage"
 )
 
 const requesterCount = 3

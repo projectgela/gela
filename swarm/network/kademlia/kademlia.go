@@ -23,8 +23,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tomochain/tomochain/log"
-	"github.com/tomochain/tomochain/metrics"
+	"github.com/projectgela/gela/log"
+	"github.com/projectgela/gela/metrics"
 )
 
 //metrics variables

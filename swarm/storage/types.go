@@ -24,9 +24,9 @@ import (
 	"io"
 	"sync"
 
-	"github.com/tomochain/tomochain/bmt"
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/crypto/sha3"
+	"github.com/projectgela/gela/bmt"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/crypto/sha3"
 )
 
 type Hasher func() hash.Hash

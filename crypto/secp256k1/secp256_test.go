@@ -24,8 +24,8 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/tomochain/tomochain/common/math"
-	"github.com/tomochain/tomochain/crypto/randentropy"
+	"github.com/projectgela/gela/common/math"
+	"github.com/projectgela/gela/crypto/randentropy"
 )
 
 const TestCount = 1000

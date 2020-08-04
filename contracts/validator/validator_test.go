@@ -23,13 +23,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tomochain/tomochain/accounts/abi/bind"
-	"github.com/tomochain/tomochain/accounts/abi/bind/backends"
-	"github.com/tomochain/tomochain/common"
-	contractValidator "github.com/tomochain/tomochain/contracts/validator/contract"
-	"github.com/tomochain/tomochain/core"
-	"github.com/tomochain/tomochain/crypto"
-	"github.com/tomochain/tomochain/log"
+	"github.com/projectgela/gela/accounts/abi/bind"
+	"github.com/projectgela/gela/accounts/abi/bind/backends"
+	"github.com/projectgela/gela/common"
+	contractValidator "github.com/projectgela/gela/contracts/validator/contract"
+	"github.com/projectgela/gela/core"
+	"github.com/projectgela/gela/crypto"
+	"github.com/projectgela/gela/log"
 )
 
 var (

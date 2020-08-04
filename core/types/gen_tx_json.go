@@ -7,8 +7,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/tomochain/tomochain/common"
-	"github.com/tomochain/tomochain/common/hexutil"
+	"github.com/projectgela/gela/common"
+	"github.com/projectgela/gela/common/hexutil"
 )
 
 var _ = (*txdataMarshaling)(nil)

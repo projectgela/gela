@@ -17,7 +17,7 @@
 package fuse
 
 import (
-	"github.com/tomochain/tomochain/swarm/api"
+	"github.com/projectgela/gela/swarm/api"
 	"sync"
 	"time"
 )
