@@ -28,11 +28,11 @@ import (
 
 	cli "gopkg.in/urfave/cli.v1"
 
+	"github.com/naoina/toml"
 	"github.com/projectgela/gela/cmd/utils"
 	"github.com/projectgela/gela/common"
 	"github.com/projectgela/gela/log"
 	"github.com/projectgela/gela/node"
-	"github.com/naoina/toml"
 
 	bzzapi "github.com/projectgela/gela/swarm/api"
 )
@@ -70,7 +70,7 @@ const (
 	SWARM_ENV_ENS_ADDR        = "SWARM_ENS_ADDR"
 	SWARM_ENV_CORS            = "SWARM_CORS"
 	SWARM_ENV_BOOTNODES       = "SWARM_BOOTNODES"
-	TOMO_ENV_DATADIR          = "TOMO_DATADIR"
+	GELA_ENV_DATADIR          = "GELA_DATADIR"
 )
 
 // These settings ensure that TOML keys use the same names as Go struct fields.
@@ -116,7 +116,7 @@ func initSwarmNode(config *bzzapi.Config, stack *node.Node, ctx *cli.Context) {
 	//at this point, all vars should be set in the Config
 	//get the account for the provided swarm account
 	prvkey := getAccount(config.BzzAccount, ctx, stack)
-	//set the resolved config path (tomo --datadir)
+	//set the resolved config path (gela --datadir)
 	config.Path = stack.InstanceDir()
 	//finally, initialize the configuration
 	config.Init(prvkey)
@@ -243,7 +243,7 @@ func envVarsOverride(currentConfig *bzzapi.Config) (config *bzzapi.Config) {
 		}
 	}
 
-	if datadir := os.Getenv(TOMO_ENV_DATADIR); datadir != "" {
+	if datadir := os.Getenv(GELA_ENV_DATADIR); datadir != "" {
 		currentConfig.Path = datadir
 	}
 

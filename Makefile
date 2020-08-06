@@ -1,6 +1,6 @@
-.PHONY: tomo tomo-cross evm all test clean
-.PHONY: tomo-linux tomo-linux-386 tomo-linux-amd64 tomo-linux-mips64 tomo-linux-mips64le
-.PHONY: tomo-darwin tomo-darwin-386 tomo-darwin-amd64
+.PHONY: gela gela-cross evm all test clean
+.PHONY: gela-linux gela-linux-386 gela-linux-amd64 gela-linux-mips64 gela-linux-mips64le
+.PHONY: gela-darwin gela-darwin-386 gela-darwin-amd64
 
 GOBIN = $(shell pwd)/build/bin
 GOFMT = gofmt
@@ -10,10 +10,10 @@ GO_FILES := $(shell find $(shell go list -f '{{.Dir}}' $(GO_PACKAGES)) -name \*.
 
 GIT = git
 
-tomo:
-	go run build/ci.go install ./cmd/tomo
+gela:
+	go run build/ci.go install ./cmd/gela
 	@echo "Done building."
-	@echo "Run \"$(GOBIN)/tomo\" to launch tomo."
+	@echo "Run \"$(GOBIN)/gela\" to launch gela."
 
 gc:
 	go run build/ci.go install ./cmd/gc
@@ -41,62 +41,62 @@ clean:
 
 # Cross Compilation Targets (xgo)
 
-tomo-cross: tomo-windows-amd64 tomo-darwin-amd64 tomo-linux
+gela-cross: gela-windows-amd64 gela-darwin-amd64 gela-linux
 	@echo "Full cross compilation done:"
-	@ls -ld $(GOBIN)/tomo-*
+	@ls -ld $(GOBIN)/gela-*
 
-tomo-linux: tomo-linux-386 tomo-linux-amd64 tomo-linux-mips64 tomo-linux-mips64le
+gela-linux: gela-linux-386 gela-linux-amd64 gela-linux-mips64 gela-linux-mips64le
 	@echo "Linux cross compilation done:"
-	@ls -ld $(GOBIN)/tomo-linux-*
+	@ls -ld $(GOBIN)/gela-linux-*
 
-tomo-linux-386:
-	go run build/ci.go xgo -- --go=$(GO) --targets=linux/386 -v ./cmd/tomo
+gela-linux-386:
+	go run build/ci.go xgo -- --go=$(GO) --targets=linux/386 -v ./cmd/gela
 	@echo "Linux 386 cross compilation done:"
-	@ls -ld $(GOBIN)/tomo-linux-* | grep 386
+	@ls -ld $(GOBIN)/gela-linux-* | grep 386
 
-tomo-linux-amd64:
-	go run build/ci.go xgo -- --go=$(GO) --targets=linux/amd64 -v ./cmd/tomo
+gela-linux-amd64:
+	go run build/ci.go xgo -- --go=$(GO) --targets=linux/amd64 -v ./cmd/gela
 	@echo "Linux amd64 cross compilation done:"
-	@ls -ld $(GOBIN)/tomo-linux-* | grep amd64
+	@ls -ld $(GOBIN)/gela-linux-* | grep amd64
 
-tomo-linux-mips:
-	go run build/ci.go xgo -- --go=$(GO) --targets=linux/mips --ldflags '-extldflags "-static"' -v ./cmd/tomo
+gela-linux-mips:
+	go run build/ci.go xgo -- --go=$(GO) --targets=linux/mips --ldflags '-extldflags "-static"' -v ./cmd/gela
 	@echo "Linux MIPS cross compilation done:"
-	@ls -ld $(GOBIN)/tomo-linux-* | grep mips
+	@ls -ld $(GOBIN)/gela-linux-* | grep mips
 
-tomo-linux-mipsle:
-	go run build/ci.go xgo -- --go=$(GO) --targets=linux/mipsle --ldflags '-extldflags "-static"' -v ./cmd/tomo
+gela-linux-mipsle:
+	go run build/ci.go xgo -- --go=$(GO) --targets=linux/mipsle --ldflags '-extldflags "-static"' -v ./cmd/gela
 	@echo "Linux MIPSle cross compilation done:"
-	@ls -ld $(GOBIN)/tomo-linux-* | grep mipsle
+	@ls -ld $(GOBIN)/gela-linux-* | grep mipsle
 
-tomo-linux-mips64:
-	go run build/ci.go xgo -- --go=$(GO) --targets=linux/mips64 --ldflags '-extldflags "-static"' -v ./cmd/tomo
+gela-linux-mips64:
+	go run build/ci.go xgo -- --go=$(GO) --targets=linux/mips64 --ldflags '-extldflags "-static"' -v ./cmd/gela
 	@echo "Linux MIPS64 cross compilation done:"
-	@ls -ld $(GOBIN)/tomo-linux-* | grep mips64
+	@ls -ld $(GOBIN)/gela-linux-* | grep mips64
 
-tomo-linux-mips64le:
-	go run build/ci.go xgo -- --go=$(GO) --targets=linux/mips64le --ldflags '-extldflags "-static"' -v ./cmd/tomo
+gela-linux-mips64le:
+	go run build/ci.go xgo -- --go=$(GO) --targets=linux/mips64le --ldflags '-extldflags "-static"' -v ./cmd/gela
 	@echo "Linux MIPS64le cross compilation done:"
-	@ls -ld $(GOBIN)/tomo-linux-* | grep mips64le
+	@ls -ld $(GOBIN)/gela-linux-* | grep mips64le
 
-tomo-darwin: tomo-darwin-386 tomo-darwin-amd64
+gela-darwin: gela-darwin-386 gela-darwin-amd64
 	@echo "Darwin cross compilation done:"
-	@ls -ld $(GOBIN)/tomo-darwin-*
+	@ls -ld $(GOBIN)/gela-darwin-*
 
-tomo-darwin-386:
-	go run build/ci.go xgo -- --go=$(GO) --targets=darwin/386 -v ./cmd/tomo
+gela-darwin-386:
+	go run build/ci.go xgo -- --go=$(GO) --targets=darwin/386 -v ./cmd/gela
 	@echo "Darwin 386 cross compilation done:"
-	@ls -ld $(GOBIN)/tomo-darwin-* | grep 386
+	@ls -ld $(GOBIN)/gela-darwin-* | grep 386
 
-tomo-darwin-amd64:
-	go run build/ci.go xgo -- --go=$(GO) --targets=darwin/amd64 -v ./cmd/tomo
+gela-darwin-amd64:
+	go run build/ci.go xgo -- --go=$(GO) --targets=darwin/amd64 -v ./cmd/gela
 	@echo "Darwin amd64 cross compilation done:"
-	@ls -ld $(GOBIN)/tomo-darwin-* | grep amd64
+	@ls -ld $(GOBIN)/gela-darwin-* | grep amd64
 
-tomo-windows-amd64:
-	go run build/ci.go xgo -- --go=$(GO) --targets=windows/amd64 -v ./cmd/tomo
+gela-windows-amd64:
+	go run build/ci.go xgo -- --go=$(GO) --targets=windows/amd64 -v ./cmd/gela
 	@echo "Windows amd64 cross compilation done:"
-	@ls -ld $(GOBIN)/tomo-windows-* | grep amd64
+	@ls -ld $(GOBIN)/gela-windows-* | grep amd64
 gofmt:
 	$(GOFMT) -s -w $(GO_FILES)
 	$(GIT) checkout vendor

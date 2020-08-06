@@ -24,14 +24,14 @@ import (
 )
 
 var (
-	TomoMainnetGenesisHash = common.HexToHash("9326145f8a2c8c00bbe13afc7d7f3d9c868b5ef39d89f2f4e9390e9720298624") // Tomo Mainnet genesis hash to enforce below configs on
+	GelaMainnetGenesisHash = common.HexToHash("9326145f8a2c8c00bbe13afc7d7f3d9c868b5ef39d89f2f4e9390e9720298624") // Gela Mainnet genesis hash to enforce below configs on
 	MainnetGenesisHash     = common.HexToHash("8d13370621558f4ed0da587934473c0404729f28b0ff1d50e5fdd840457a2f17") // Mainnet genesis hash to enforce below configs on
 	TestnetGenesisHash     = common.HexToHash("dffc8ae3b45965404b4fd73ce7f0e13e822ac0fc23ce7e95b42bc5f1e57023a5") // Testnet genesis hash to enforce below configs on
 )
 
 var (
-	// TomoChain mainnet config
-	TomoMainnetChainConfig = &ChainConfig{
+	// Gela mainnet config
+	GelaMainnetChainConfig = &ChainConfig{
 		ChainId:        big.NewInt(88),
 		HomesteadBlock: big.NewInt(1),
 		EIP150Block:    big.NewInt(2),
@@ -245,16 +245,16 @@ func (c *ChainConfig) IsTIPRandomize(num *big.Int) bool {
 	return isForked(common.TIPRandomize, num)
 }
 
-func (c *ChainConfig) IsTIPTomoX(num *big.Int) bool {
+func (c *ChainConfig) IsTIPGelX(num *big.Int) bool {
 	if common.IsTestnet {
-		return isForked(common.TIPTomoXTestnet, num)
+		return isForked(common.TIPGelXTestnet, num)
 	} else {
-		return isForked(common.TIPTomoX, num)
+		return isForked(common.TIPGelX, num)
 	}
 }
 
-func (c *ChainConfig) IsTIPTomoXLending(num *big.Int) bool {
-	return isForked(common.TIPTomoXLending, num)
+func (c *ChainConfig) IsTIPGelXLending(num *big.Int) bool {
+	return isForked(common.TIPGelXLending, num)
 }
 
 // GasTable returns the gas table corresponding to the current phase (homestead or homestead reprice).

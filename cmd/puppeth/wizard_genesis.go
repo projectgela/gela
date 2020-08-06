@@ -312,7 +312,7 @@ func (w *wizard) makeGenesis() {
 		}
 
 		fmt.Println()
-		fmt.Println("What is swap wallet address for fund 55m tomo?")
+		fmt.Println("What is swap wallet address for fund 55m gela?")
 		swapAddr := *w.readAddress()
 		baseBalance := big.NewInt(0) // 0m
 		baseBalance.Add(baseBalance, big.NewInt(0*1000*1000))

@@ -42,10 +42,10 @@ type Backend interface {
 	BlockChain() *core.BlockChain
 	TxPool() *core.TxPool
 	ChainDb() ethdb.Database
-	GetTomoX() *tomox.TomoX
+	GetGelX() *gelx.GelX
 	OrderPool() *core.OrderPool
 	LendingPool() *core.LendingPool
-	GetTomoXLending() *tomoxlending.Lending
+	GetGelXLending() *gelxlending.Lending
 }
 
 // Miner creates blocks and searches for proof-of-work values.

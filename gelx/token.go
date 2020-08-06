@@ -1,7 +1,7 @@
-package tomox
+package gelx
 
 import (
-	"github.com/projectgela/gela/contracts/tomox/contract"
+	"github.com/projectgela/gela/contracts/gelx/contract"
 	"github.com/projectgela/gela/log"
 	"math/big"
 	"strings"
@@ -17,7 +17,7 @@ import (
 
 // GetTokenAbi return token abi
 func GetTokenAbi() (*abi.ABI, error) {
-	contractABI, err := abi.JSON(strings.NewReader(contract.TRC21ABI))
+	contractABI, err := abi.JSON(strings.NewReader(contract.GRC21ABI))
 	if err != nil {
 		return nil, err
 	}
@@ -32,7 +32,7 @@ func RunContract(chain consensus.ChainContext, statedb *state.StateDB, contractA
 	}
 	backend := (*backends.SimulatedBackend)(nil)
 	fakeCaller := common.HexToAddress("0x0000000000000000000000000000000000000001")
-	msg := tomochain.CallMsg{To: &contractAddr, Data: input, From: fakeCaller}
+	msg := gela.CallMsg{To: &contractAddr, Data: input, From: fakeCaller}
 	result, err := backend.CallContractWithState(msg, chain, statedb)
 	if err != nil {
 		return nil, err
@@ -45,12 +45,12 @@ func RunContract(chain consensus.ChainContext, statedb *state.StateDB, contractA
 	return unpackResult, nil
 }
 
-func (tomox *TomoX) GetTokenDecimal(chain consensus.ChainContext, statedb *state.StateDB, tokenAddr common.Address) (*big.Int, error) {
-	if tokenDecimal, ok := tomox.tokenDecimalCache.Get(tokenAddr); ok {
+func (gelx *GelX) GetTokenDecimal(chain consensus.ChainContext, statedb *state.StateDB, tokenAddr common.Address) (*big.Int, error) {
+	if tokenDecimal, ok := gelx.tokenDecimalCache.Get(tokenAddr); ok {
 		return tokenDecimal.(*big.Int), nil
 	}
-	if tokenAddr.String() == common.TomoNativeAddress {
-		tomox.tokenDecimalCache.Add(tokenAddr, common.BasePrice)
+	if tokenAddr.String() == common.GelaNativeAddress {
+		gelx.tokenDecimalCache.Add(tokenAddr, common.BasePrice)
 		return common.BasePrice, nil
 	}
 	var decimals uint8
@@ -69,6 +69,6 @@ func (tomox *TomoX) GetTokenDecimal(chain consensus.ChainContext, statedb *state
 	decimals = result.(uint8)
 
 	tokenDecimal := new(big.Int).SetUint64(0).Exp(big.NewInt(10), big.NewInt(int64(decimals)), nil)
-	tomox.tokenDecimalCache.Add(tokenAddr, tokenDecimal)
+	gelx.tokenDecimalCache.Add(tokenAddr, tokenDecimal)
 	return tokenDecimal, nil
 }

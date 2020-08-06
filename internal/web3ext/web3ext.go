@@ -29,8 +29,8 @@ var Modules = map[string]string{
 	"personal":     Personal_JS,
 	"rpc":          RPC_JS,
 	"shh":          Shh_JS,
-	"tomox":        TomoX_JS,
-	"tomoxlending": TomoXLending_JS,
+	"gelx":        GelX_JS,
+	"gelxlending": GelXLending_JS,
 	"swarmfs":      SWARMFS_JS,
 	"txpool":       TxPool_JS,
 }
@@ -625,304 +625,304 @@ web3._extend({
 });
 `
 
-const TomoX_JS = `
+const GelX_JS = `
 web3._extend({
-	property: 'tomox',
+	property: 'gelx',
 	methods: [
 		new web3._extend.Method({
 			name: 'version',
-			call: 'tomox_version',
+			call: 'gelx_version',
 			params: 0,
 			outputFormatter: web3._extend.utils.toDecimal
 		}),
 		new web3._extend.Method({
 			name: 'info',
-			call: 'tomox_info',
+			call: 'gelx_info',
 			params: 0
 		}),
 		new web3._extend.Method({
             name: 'getFeeByEpoch',
-            call: 'tomox_getFeeByEpoch',
+            call: 'gelx_getFeeByEpoch',
             params: 1,
             inputFormatter: [null, web3._extend.formatters.inputAddressFormatter]
         }),
 		new web3._extend.Method({
             name: 'sendOrderRawTransaction',
-            call: 'tomox_sendOrderRawTransaction',
+            call: 'gelx_sendOrderRawTransaction',
             params: 1
 		}),
 		new web3._extend.Method({
             name: 'sendLendingRawTransaction',
-            call: 'tomox_sendLendingRawTransaction',
+            call: 'gelx_sendLendingRawTransaction',
             params: 1
 		}),
 		
 		new web3._extend.Method({
             name: 'sendOrderTransaction',
-            call: 'tomox_sendOrder',
+            call: 'gelx_sendOrder',
             params: 1
 		}),
 		new web3._extend.Method({
             name: 'sendLendingTransaction',
-            call: 'tomox_sendLending',
+            call: 'gelx_sendLending',
             params: 1
 		}),
 		new web3._extend.Method({
             name: 'getOrderTxMatchByHash',
-            call: 'tomox_getOrderTxMatchByHash',
+            call: 'gelx_getOrderTxMatchByHash',
             params: 1
 		}),
 		new web3._extend.Method({
             name: 'getOrderPoolContent',
-            call: 'tomox_getOrderPoolContent',
+            call: 'gelx_getOrderPoolContent',
             params: 0
 		}),
 		new web3._extend.Method({
             name: 'getOrderStats',
-            call: 'tomox_getOrderStats',
+            call: 'gelx_getOrderStats',
             params: 0
 		}),
 		new web3._extend.Method({
             name: 'getOrderCount',
-            call: 'tomox_getOrderCount',
+            call: 'gelx_getOrderCount',
             params: 1
         }),
 		new web3._extend.Method({
             name: 'getBestBid',
-            call: 'tomox_getBestBid',
+            call: 'gelx_getBestBid',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getBestAsk',
-            call: 'tomox_getBestAsk',
+            call: 'gelx_getBestAsk',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getBidTree',
-            call: 'tomox_getBidTree',
+            call: 'gelx_getBidTree',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getAskTree',
-            call: 'tomox_getAskTree',
+            call: 'gelx_getAskTree',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getOrderById',
-            call: 'tomox_getOrderById',
+            call: 'gelx_getOrderById',
             params: 3
 		}),
 		new web3._extend.Method({
             name: 'getPrice',
-            call: 'tomox_getPrice',
+            call: 'gelx_getPrice',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getLastEpochPrice',
-            call: 'tomox_getLastEpochPrice',
+            call: 'gelx_getLastEpochPrice',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getCurrentEpochPrice',
-            call: 'tomox_getCurrentEpochPrice',
+            call: 'gelx_getCurrentEpochPrice',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getTradingOrderBookInfo',
-            call: 'tomox_getTradingOrderBookInfo',
+            call: 'gelx_getTradingOrderBookInfo',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getLiquidationPriceTree',
-            call: 'tomox_getLiquidationPriceTree',
+            call: 'gelx_getLiquidationPriceTree',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getInvestingTree',
-            call: 'tomox_getInvestingTree',
+            call: 'gelx_getInvestingTree',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getBorrowingTree',
-            call: 'tomox_getBorrowingTree',
+            call: 'gelx_getBorrowingTree',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getLendingOrderBookInfo',
-            call: 'tomox_getLendingOrderBookInfo',
+            call: 'gelx_getLendingOrderBookInfo',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getLendingOrderTree',
-            call: 'tomox_getLendingOrderTree',
+            call: 'gelx_getLendingOrderTree',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getLendingTradeTree',
-            call: 'tomox_getLendingTradeTree',
+            call: 'gelx_getLendingTradeTree',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getLiquidationTimeTree',
-            call: 'tomox_getLiquidationTimeTree',
+            call: 'gelx_getLiquidationTimeTree',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getLendingOrderCount',
-            call: 'tomox_getLendingOrderCount',
+            call: 'gelx_getLendingOrderCount',
             params: 1
         }),
 		new web3._extend.Method({
             name: 'getBestInvesting',
-            call: 'tomox_getBestInvesting',
+            call: 'gelx_getBestInvesting',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getBestBorrowing',
-            call: 'tomox_getBestBorrowing',
+            call: 'gelx_getBestBorrowing',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getBids',
-            call: 'tomox_getBids',
+            call: 'gelx_getBids',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getAsks',
-            call: 'tomox_getAsks',
+            call: 'gelx_getAsks',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getInvests',
-            call: 'tomox_getInvests',
+            call: 'gelx_getInvests',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getBorrows',
-            call: 'tomox_getBorrows',
+            call: 'gelx_getBorrows',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getLendingTxMatchByHash',
-            call: 'tomox_getLendingTxMatchByHash',
+            call: 'gelx_getLendingTxMatchByHash',
             params: 1
 		}),
 		new web3._extend.Method({
             name: 'getLiquidatedTradesByTxHash',
-            call: 'tomox_getLiquidatedTradesByTxHash',
+            call: 'gelx_getLiquidatedTradesByTxHash',
             params: 1
 		}),
 		new web3._extend.Method({
             name: 'getLendingOrderById',
-            call: 'tomox_getLendingOrderById',
+            call: 'gelx_getLendingOrderById',
             params: 3
 		}),
 		new web3._extend.Method({
             name: 'getLendingTradeById',
-            call: 'tomox_getLendingTradeById',
+            call: 'gelx_getLendingTradeById',
             params: 3
 		}),
 	]
 });
 `
 
-const TomoXLending_JS = `
+const GelXLending_JS = `
 web3._extend({
-	property: 'tomoxlending',
+	property: 'gelxlending',
 	methods: [
 		new web3._extend.Method({
 			name: 'version',
-			call: 'tomoxlending_version',
+			call: 'gelxlending_version',
 			params: 0,
 			outputFormatter: web3._extend.utils.toDecimal
 		}),
 		new web3._extend.Method({
 			name: 'info',
-			call: 'tomoxlending_info',
+			call: 'gelxlending_info',
 			params: 0
 		}),
 		new web3._extend.Method({
             name: 'createOrder',
-            call: 'tomoxlending_createOrder',
+            call: 'gelxlending_createOrder',
             params: 1,
             inputFormatter: [null]
         }),
         new web3._extend.Method({
             name: 'cancelOrder',
-            call: 'tomoxlending_cancelOrder',
+            call: 'gelxlending_cancelOrder',
             params: 1,
             inputFormatter: [null]
         }),
         new web3._extend.Method({
             name: 'getOrders',
-            call: 'tomoxlending_getOrders',
+            call: 'gelxlending_getOrders',
             params: 1
         }),
 		new web3._extend.Method({
             name: 'getOrderNonce',
-            call: 'tomoxlending_getOrderNonce',
+            call: 'gelxlending_getOrderNonce',
             params: 1,
             inputFormatter: [web3._extend.formatters.inputAddressFormatter]
 		}),
 		new web3._extend.Method({
             name: 'getFeeByEpoch',
-            call: 'tomoxlending_GetFeeByEpoch',
+            call: 'gelxlending_GetFeeByEpoch',
             params: 1,
             inputFormatter: [null, web3._extend.formatters.inputAddressFormatter]
         }),
 		new web3._extend.Method({
             name: 'getPendingOrders',
-            call: 'tomoxlending_getPendingOrders',
+            call: 'gelxlending_getPendingOrders',
             params: 1
         }),
 		new web3._extend.Method({
             name: 'getAllPendingHashes',
-            call: 'tomoxlending_getAllPendingHashes',
+            call: 'gelxlending_getAllPendingHashes',
             params: 0
         }),
 		new web3._extend.Method({
             name: 'sendOrderRawTransaction',
-            call: 'tomoxlending_sendOrderRawTransaction',
+            call: 'gelxlending_sendOrderRawTransaction',
             params: 1
         }),
 		new web3._extend.Method({
             name: 'sendOrderTransaction',
-            call: 'tomoxlending_sendOrder',
+            call: 'gelxlending_sendOrder',
             params: 1
 		}),
 		new web3._extend.Method({
             name: 'getOrderCount',
-            call: 'tomoxlending_getOrderCount',
+            call: 'gelxlending_getOrderCount',
             params: 1
         }),
 		new web3._extend.Method({
             name: 'getBestBid',
-            call: 'tomoxlending_getBestBid',
+            call: 'gelxlending_getBestBid',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getBestAsk',
-            call: 'tomoxlending_getBestAsk',
+            call: 'gelxlending_getBestAsk',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getBidTree',
-            call: 'tomoxlending_getBidTree',
+            call: 'gelxlending_getBidTree',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getAskTree',
-            call: 'tomoxlending_getAskTree',
+            call: 'gelxlending_getAskTree',
             params: 2
 		}),
 		new web3._extend.Method({
             name: 'getOrderById',
-            call: 'tomoxlending_getOrderById',
+            call: 'gelxlending_getOrderById',
             params: 3
 		}),
 		new web3._extend.Method({
             name: 'getPrice',
-            call: 'tomoxlending_getPrice',
+            call: 'gelxlending_getPrice',
             params: 2
 		}),
 	]
@@ -939,7 +939,7 @@ web3._extend({
 
    var sendOrderTransaction = new Method({
        name: 'sendOrder',
-       call: 'tomox_sendOrder',
+       call: 'gelx_sendOrder',
        params: 1,
        inputFormatter: [null]
    });

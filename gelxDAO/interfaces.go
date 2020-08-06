@@ -1,8 +1,8 @@
-// Copyright 2019 The Tomochain Authors
-// This file is part of the Core Tomochain infrastructure
-// https://tomochain.com
-// Package tomoxDAO provides an interface to work with tomox database, including leveldb for masternode and mongodb for SDK node
-package tomoxDAO
+// Copyright 2019 The Gela Authors
+// This file is part of the Core Gela infrastructure
+// https://gela.io
+// Package gelxDAO provides an interface to work with gelx database, including leveldb for masternode and mongodb for SDK node
+package gelxDAO
 
 import (
 	"github.com/projectgela/gela/common"
@@ -11,7 +11,7 @@ import (
 
 const defaultCacheLimit = 1024
 
-type TomoXDAO interface {
+type GelXDAO interface {
 	// for both leveldb and mongodb
 	IsEmptyKey(key []byte) bool
 	Close()
@@ -25,13 +25,13 @@ type TomoXDAO interface {
 	GetListItemByHashes(hashes []string, val interface{}) interface{}
 	DeleteItemByTxHash(txhash common.Hash, val interface{})
 
-		// basic tomox
-		InitBulk()
-		CommitBulk() error
+	// basic gelx
+	InitBulk()
+	CommitBulk() error
 
-		// tomox lending
-		InitLendingBulk()
-		CommitLendingBulk() error
+	// gelx lending
+	InitLendingBulk()
+	CommitLendingBulk() error
 
 	// leveldb methods
 	Put(key []byte, value []byte) error

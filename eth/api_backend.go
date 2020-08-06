@@ -425,25 +425,25 @@ func (b *EthApiBackend) AreTwoBlockSamePath(bh1 common.Hash, bh2 common.Hash) bo
 
 // GetOrderNonce get order nonce
 func (b *EthApiBackend) GetOrderNonce(address common.Hash) (uint64, error) {
-	tomoxService := b.eth.GetTomoX()
-	if tomoxService != nil {
+	gelxService := b.eth.GetGelX()
+	if gelxService != nil {
 		author, err := b.GetEngine().Author(b.CurrentBlock().Header())
 		if err != nil {
 			return 0, err
 		}
-		tomoxState, err := tomoxService.GetTradingState(b.CurrentBlock(), author)
+		gelxState, err := gelxService.GetTradingState(b.CurrentBlock(), author)
 		if err != nil {
 			return 0, err
 		}
-		return tomoxState.GetNonce(address), nil
+		return gelxState.GetNonce(address), nil
 	}
-	return 0, errors.New("cannot find tomox service")
+	return 0, errors.New("cannot find gelx service")
 }
 
-func (b *EthApiBackend) TomoxService() *tomox.TomoX {
-	return b.eth.TomoX
+func (b *EthApiBackend) GelxService() *gelx.GelX {
+	return b.eth.GelX
 }
 
-func (b *EthApiBackend) LendingService() *tomoxlending.Lending {
+func (b *EthApiBackend) LendingService() *gelxlending.Lending {
 	return b.eth.Lending
 }

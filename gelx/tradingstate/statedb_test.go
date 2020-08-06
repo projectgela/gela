@@ -18,16 +18,17 @@ package tradingstate
 
 import (
 	"fmt"
+	"math/big"
+	"testing"
+
 	"github.com/projectgela/gela/common"
 	"github.com/projectgela/gela/common/math"
 	"github.com/projectgela/gela/ethdb"
-	"math/big"
-	"testing"
 )
 
 func TestEchangeStates(t *testing.T) {
 	t.SkipNow()
-	orderBook := common.StringToHash("BTC/TOMO")
+	orderBook := common.StringToHash("BTC/GEL")
 	price := big.NewInt(10000)
 	numberOrder := 20
 	orderItems := []OrderItem{}
@@ -160,7 +161,7 @@ func TestEchangeStates(t *testing.T) {
 }
 
 func TestRevertStates(t *testing.T) {
-	orderBook := common.StringToHash("BTC/TOMO")
+	orderBook := common.StringToHash("BTC/GEL")
 	numberOrder := 20
 	orderItems := []OrderItem{}
 	relayers := []common.Hash{}
@@ -267,7 +268,7 @@ func TestRevertStates(t *testing.T) {
 }
 
 func TestDumpState(t *testing.T) {
-	orderBook := common.StringToHash("BTC/TOMO")
+	orderBook := common.StringToHash("BTC/GEL")
 	numberOrder := 5
 	orderItems := []OrderItem{}
 	for i := 0; i < numberOrder; i++ {

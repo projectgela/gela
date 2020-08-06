@@ -1,4 +1,4 @@
-package tomoxlending
+package gelxlending
 
 import (
 	"github.com/projectgela/gela/common"

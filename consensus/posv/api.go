@@ -1,4 +1,4 @@
-// Copyright (c) 2018 Tomochain
+// Copyright (c) 2018 Gela
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
@@ -31,10 +31,10 @@ type API struct {
 }
 type NetworkInformation struct {
 	NetworkId                  *big.Int
-	TomoValidatorAddress       common.Address
+	GelaValidatorAddress       common.Address
 	RelayerRegistrationAddress common.Address
-	TomoXListingAddress        common.Address
-	TomoZAddress               common.Address
+	GelXListingAddress        common.Address
+	GelaZAddress               common.Address
 	LendingAddress             common.Address
 }
 
@@ -101,17 +101,17 @@ func (api *API) NetworkInformation() NetworkInformation {
 	defer api.posv.lock.RUnlock()
 	info := NetworkInformation{}
 	info.NetworkId = api.chain.Config().ChainId
-	info.TomoValidatorAddress = common.HexToAddress(common.MasternodeVotingSMC)
+	info.GelaValidatorAddress = common.HexToAddress(common.MasternodeVotingSMC)
 	if common.IsTestnet {
 		info.LendingAddress = common.HexToAddress(common.LendingRegistrationSMCTestnet)
 		info.RelayerRegistrationAddress = common.HexToAddress(common.RelayerRegistrationSMCTestnet)
-		info.TomoXListingAddress = common.TomoXListingSMCTestNet
-		info.TomoZAddress = common.TRC21IssuerSMCTestNet
+		info.GelXListingAddress = common.GelXListingSMCTestNet
+		info.GelaZAddress = common.GRC21IssuerSMCTestNet
 	} else {
 		info.LendingAddress = common.HexToAddress(common.LendingRegistrationSMC)
 		info.RelayerRegistrationAddress = common.HexToAddress(common.RelayerRegistrationSMC)
-		info.TomoXListingAddress = common.TomoXListingSMC
-		info.TomoZAddress = common.TRC21IssuerSMC
+		info.GelXListingAddress = common.GelXListingSMC
+		info.GelaZAddress = common.GRC21IssuerSMC
 	}
 	return info
 }

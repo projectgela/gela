@@ -1,4 +1,4 @@
-package tomox
+package gelx
 
 import (
 	"github.com/projectgela/gela/common"

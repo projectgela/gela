@@ -1,4 +1,4 @@
-package tomoxDAO
+package gelxDAO
 
 import (
 	"bytes"

@@ -49,8 +49,8 @@ type Backend interface {
 	ChainDb() ethdb.Database
 	EventMux() *event.TypeMux
 	AccountManager() *accounts.Manager
-	TomoxService() *tomox.TomoX
-	LendingService() *tomoxlending.Lending
+	GelxService() *gelx.GelX
+	LendingService() *gelxlending.Lending
 
 	// BlockChain API
 	SetHead(number uint64)
@@ -114,9 +114,9 @@ func GetAPIs(apiBackend Backend) []rpc.API {
 			Service:   NewPublicTransactionPoolAPI(apiBackend, nonceLock),
 			Public:    true,
 		}, {
-			Namespace: "tomox",
+			Namespace: "gelx",
 			Version:   "1.0",
-			Service:   NewPublicTomoXTransactionPoolAPI(apiBackend, nonceLock),
+			Service:   NewPublicGelXTransactionPoolAPI(apiBackend, nonceLock),
 			Public:    true,
 		}, {
 			Namespace: "txpool",

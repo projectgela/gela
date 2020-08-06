@@ -1,4 +1,4 @@
-package tomox
+package gelx
 
 import (
 	"context"
@@ -18,25 +18,25 @@ var (
 	ErrOrderNonceTooHigh = errors.New("OrderNonce too high")
 )
 
-// PublicTomoXAPI provides the tomoX RPC service that can be
+// PublicGelXAPI provides the gelX RPC service that can be
 // use publicly without security implications.
-type PublicTomoXAPI struct {
-	t        *TomoX
+type PublicGelXAPI struct {
+	t        *GelX
 	mu       sync.Mutex
 	lastUsed map[string]time.Time // keeps track when a filter was polled for the last time.
 
 }
 
-// NewPublicTomoXAPI create a new RPC tomoX service.
-func NewPublicTomoXAPI(t *TomoX) *PublicTomoXAPI {
-	api := &PublicTomoXAPI{
+// NewPublicGelXAPI create a new RPC gelX service.
+func NewPublicGelXAPI(t *GelX) *PublicGelXAPI {
+	api := &PublicGelXAPI{
 		t:        t,
 		lastUsed: make(map[string]time.Time),
 	}
 	return api
 }
 
-// Version returns the TomoX sub-protocol version.
-func (api *PublicTomoXAPI) Version(ctx context.Context) string {
+// Version returns the GelX sub-protocol version.
+func (api *PublicGelXAPI) Version(ctx context.Context) string {
 	return ProtocolVersionStr
 }

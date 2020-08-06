@@ -1,4 +1,4 @@
-package tomoxlending
+package gelxlending
 
 import (
 	"context"
@@ -14,18 +14,18 @@ var (
 	ErrOrderNonceTooHigh = errors.New("OrderNonce too high")
 )
 
-// PublicTomoXLendingAPI provides the tomoX RPC service that can be
+// PublicGelXLendingAPI provides the gelX RPC service that can be
 // use publicly without security implications.
-type PublicTomoXLendingAPI struct {
+type PublicGelXLendingAPI struct {
 	t        *Lending
 	mu       sync.Mutex
 	lastUsed map[string]time.Time // keeps track when a filter was polled for the last time.
 
 }
 
-// NewPublicTomoXLendingAPI create a new RPC tomoX service.
-func NewPublicTomoXLendingAPI(t *Lending) *PublicTomoXLendingAPI {
-	api := &PublicTomoXLendingAPI{
+// NewPublicGelXLendingAPI create a new RPC gelX service.
+func NewPublicGelXLendingAPI(t *Lending) *PublicGelXLendingAPI {
+	api := &PublicGelXLendingAPI{
 		t:        t,
 		lastUsed: make(map[string]time.Time),
 	}
@@ -33,6 +33,6 @@ func NewPublicTomoXLendingAPI(t *Lending) *PublicTomoXLendingAPI {
 }
 
 // Version returns the Lending sub-protocol version.
-func (api *PublicTomoXLendingAPI) Version(ctx context.Context) string {
+func (api *PublicGelXLendingAPI) Version(ctx context.Context) string {
 	return ProtocolVersionStr
 }

@@ -449,7 +449,7 @@ func TestVerifyBalance(t *testing.T) {
 				tt.fields.Quantity,
 				EtherToWei(big.NewInt(1)),
 				EtherToWei(big.NewInt(1)),
-				EtherToWei(big.NewInt(2)),    // TOMO price: 0.5 USD => USD/TOMO = 2
+				EtherToWei(big.NewInt(2)),    // GEL price: 0.5 USD => USD/GEL = 2
 				EtherToWei(big.NewInt(8000)), // BTC = 8000 USD
 				tt.fields.Term,
 				tt.fields.LendingId,
@@ -537,10 +537,10 @@ func sendOrder(nonce uint64) {
 
 	var result interface{}
 
-	err = rpcClient.Call(&result, "tomox_sendLending", item)
+	err = rpcClient.Call(&result, "gelx_sendLending", item)
 	fmt.Println("sendLendingitem", "nonce", item.AccountNonce)
 	if err != nil {
-		fmt.Println("rpcClient.Call tomox_sendLending failed", "err", err)
+		fmt.Println("rpcClient.Call gelx_sendLending failed", "err", err)
 		os.Exit(1)
 	}
 }

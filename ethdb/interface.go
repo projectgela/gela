@@ -37,8 +37,8 @@ type Database interface {
 	NewBatch() Batch
 }
 
-// TomoxDatabase interface
-type TomoxDatabase interface {
+// GelxDatabase interface
+type GelxDatabase interface {
 	GetObject(hash common.Hash, val interface{}) (interface{}, error)
 }
 

@@ -4,10 +4,10 @@ import (
 	"github.com/projectgela/gela/eth"
 	"github.com/projectgela/gela/eth/downloader"
 	"github.com/projectgela/gela/ethstats"
+	"github.com/projectgela/gela/gelx"
+	gelxlending "github.com/projectgela/gela/gelxlending"
 	"github.com/projectgela/gela/les"
 	"github.com/projectgela/gela/node"
-	"github.com/projectgela/gela/gelx"
-	"github.com/projectgela/gela/gelxlending"
 	whisper "github.com/projectgela/gela/whisper/whisperv6"
 )
 
@@ -20,11 +20,11 @@ func RegisterEthService(stack *node.Node, cfg *eth.Config) {
 		})
 	} else {
 		err = stack.Register(func(ctx *node.ServiceContext) (node.Service, error) {
-			var tomoXServ *tomox.TomoX
-			ctx.Service(&tomoXServ)
-			var lendingServ *tomoxlending.Lending
+			var gelXServ *gelx.GelX
+			ctx.Service(&gelXServ)
+			var lendingServ *gelxlending.Lending
 			ctx.Service(&lendingServ)
-			fullNode, err := eth.New(ctx, cfg, tomoXServ,lendingServ)
+			fullNode, err := eth.New(ctx, cfg, gelXServ, lendingServ)
 			if fullNode != nil && cfg.LightServ > 0 {
 				ls, _ := les.NewLesServer(fullNode, cfg)
 				fullNode.AddLesServer(ls)
@@ -63,18 +63,18 @@ func RegisterEthStatsService(stack *node.Node, url string) {
 	}
 }
 
-func RegisterTomoXService(stack *node.Node, cfg *tomox.Config) {
-	tomoX := tomox.New(cfg)
+func RegisterGelXService(stack *node.Node, cfg *gelx.Config) {
+	gelX := gelx.New(cfg)
 	if err := stack.Register(func(n *node.ServiceContext) (node.Service, error) {
-		return tomoX, nil
+		return gelX, nil
 	}); err != nil {
-		Fatalf("Failed to register the TomoX service: %v", err)
+		Fatalf("Failed to register the GelX service: %v", err)
 	}
 
-	// register tomoxlending service
+	// register gelxlending service
 	if err := stack.Register(func(n *node.ServiceContext) (node.Service, error) {
-		return tomoxlending.New(tomoX), nil
+		return gelxlending.New(gelX), nil
 	}); err != nil {
-		Fatalf("Failed to register the TomoXLending service: %v", err)
+		Fatalf("Failed to register the GelXLending service: %v", err)
 	}
 }
